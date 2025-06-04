@@ -1,0 +1,3 @@
+/Users/Elizabeth/Desktop/beginnerparlay/build/CMakeFiles/beginnerparlay.dir
+/Users/Elizabeth/Desktop/beginnerparlay/build/CMakeFiles/edit_cache.dir
+/Users/Elizabeth/Desktop/beginnerparlay/build/CMakeFiles/rebuild_cache.dir
