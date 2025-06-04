@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/Elizabeth/Desktop/beginnerparlay/src/main.cpp" "CMakeFiles/beginnerparlay.dir/src/main.cpp.o" "gcc" "CMakeFiles/beginnerparlay.dir/src/main.cpp.o.d"
+  "/Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/src/filter.cpp" "CMakeFiles/beginnerparlay.dir/src/filter.cpp.o" "gcc" "CMakeFiles/beginnerparlay.dir/src/filter.cpp.o.d"
+  "/Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/src/main.cpp" "CMakeFiles/beginnerparlay.dir/src/main.cpp.o" "gcc" "CMakeFiles/beginnerparlay.dir/src/main.cpp.o.d"
+  "/Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/src/prefix.cpp" "CMakeFiles/beginnerparlay.dir/src/prefix.cpp.o" "gcc" "CMakeFiles/beginnerparlay.dir/src/prefix.cpp.o.d"
+  "/Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/src/reduction.cpp" "CMakeFiles/beginnerparlay.dir/src/reduction.cpp.o" "gcc" "CMakeFiles/beginnerparlay.dir/src/reduction.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

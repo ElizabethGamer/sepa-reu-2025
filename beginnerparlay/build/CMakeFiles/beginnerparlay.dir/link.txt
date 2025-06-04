@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch x86_64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/beginnerparlay.dir/src/main.cpp.o -o beginnerparlay
+/usr/bin/c++  -arch x86_64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/beginnerparlay.dir/src/filter.cpp.o CMakeFiles/beginnerparlay.dir/src/main.cpp.o CMakeFiles/beginnerparlay.dir/src/prefix.cpp.o CMakeFiles/beginnerparlay.dir/src/reduction.cpp.o -o beginnerparlay

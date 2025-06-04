@@ -4,87 +4,92 @@
 #include <parlay/primitives.h>
 #include <parlay/sequence.h>
 #include <parlay/parallel.h>
+#include <parlay/monoid.h>
 
-template <typename T, typename BinOp>
-T reduction(typename parlay::sequence<T> array, int start, int end, BinOp binop){
-    if (start - end > 256) {
-        T left, right;
-        parlay::parallel_do(
-            [&]() {left = reduction(array, start, start + (end - start) / 2, binop);},
-            [&]() {right = reduction(array, start + (end - start) / 2, end, binop);}
-        );
+#include "reduction.h"
+#include "prefix.h"
+#include "filter.h"
 
-        return binop(left, right);
-    } else {
-        T sum = binop.identity;
-        while (start < end){
-            sum = binop(sum, array[start]);
-            start += 1;
-        }
+// template <typename T, typename BinOp>
+// T reduction(typename parlay::sequence<T> array, int start, int end, BinOp binop){
+//     if (start - end > 256) {
+//         T left, right;
+//         parlay::parallel_do(
+//             [&]() {left = reduction(array, start, start + (end - start) / 2, binop);},
+//             [&]() {right = reduction(array, start + (end - start) / 2, end, binop);}
+//         );
 
-        return sum;
-    }
-};
+//         return binop(left, right);
+//     } else {
+//         T sum = binop.identity;
+//         while (start < end){
+//             sum = binop(sum, array[start]);
+//             start += 1;
+//         }
 
-int scanup(parlay::sequence<int>& A, parlay::sequence<int>& M, int start, int end){
-    int left, right;
+//         return sum;
+//     }
+// };
 
-    if (end - start == 1){
-        return A[start];
-    } else {
-        parlay::parallel_do(
-        [&]() {left = scanup(A, M, start, start + (end - start) / 2);},
-        [&]() {right = scanup(A, M, start + (end - start) / 2, end);}
+// int scanup(parlay::sequence<int>& A, parlay::sequence<int>& M, int start, int end){
+//     int left, right;
 
-        );
+//     if (end - start == 1){
+//         return A[start];
+//     } else {
+//         parlay::parallel_do(
+//         [&]() {left = scanup(A, M, start, start + (end - start) / 2);},
+//         [&]() {right = scanup(A, M, start + (end - start) / 2, end);}
 
-        M[start + (end - start) / 2 - 1] = left;
-        return left + right;
-    }
-}
+//         );
 
-void scandown(parlay::sequence<int>& A, parlay::sequence<int>& M, int start, int end, int s){
-    if (end - start == 1){
-        A[start] = s;
-    } else {
-        int mid = start + (end - start) / 2;
-        parlay::parallel_do(
-            [&]() {scandown(A, M, start, mid, s);},
-            [&]() {scandown(A, M, mid, end, M[mid-1] + s);}
-        );
-    }
-}
+//         M[start + (end - start) / 2 - 1] = left;
+//         return left + right;
+//     }
+// }
 
-int prefix(parlay::sequence<int>& A){
-    int size = A.size();
-    parlay::sequence<int> M(size);
-    int total = scanup(A, M, 0, size);
-    scandown(A, M, 0, 100, 0);
+// void scandown(parlay::sequence<int>& A, parlay::sequence<int>& M, int start, int end, int s){
+//     if (end - start == 1){
+//         A[start] = s;
+//     } else {
+//         int mid = start + (end - start) / 2;
+//         parlay::parallel_do(
+//             [&]() {scandown(A, M, start, mid, s);},
+//             [&]() {scandown(A, M, mid, end, M[mid-1] + s);}
+//         );
+//     }
+// }
 
-    return total;
-}
+// int prefix(parlay::sequence<int>& A){
+//     int size = A.size();
+//     parlay::sequence<int> M(size);
+//     int total = scanup(A, M, 0, size);
+//     scandown(A, M, 0, 100, 0);
 
-parlay::sequence<int> filter(parlay::sequence<int>& arr, std::function<bool(int)> f){
-    int size = arr.size();
-    parlay::sequence<bool> flags(size);
-    parlay::sequence<int> flags_copy(size);
+//     return total;
+// }
 
-    parlay::parallel_for(0, size, [&](size_t i) {
-        flags[i] = f(arr[i]);
-        flags_copy[i] = int(f(arr[i]));
-    });
+// parlay::sequence<int> filter(parlay::sequence<int>& arr, std::function<bool(int)> f){
+//     int size = arr.size();
+//     parlay::sequence<bool> flags(size);
+//     parlay::sequence<int> flags_copy(size);
 
-    int total = prefix(flags_copy);
-    parlay::sequence<int> result(total);
+//     parlay::parallel_for(0, size, [&](size_t i) {
+//         flags[i] = f(arr[i]);
+//         flags_copy[i] = int(f(arr[i]));
+//     });
 
-    parlay::parallel_for(0, total, [&](size_t i){
-        if (flags[i]){
-            result[flags_copy[i]] = arr[i];
-        }
-    });
+//     int total = prefix(flags_copy);
+//     parlay::sequence<int> result(total);
 
-    return result;
-}
+//     parlay::parallel_for(0, total, [&](size_t i){
+//         if (flags[i]){
+//             result[flags_copy[i]] = arr[i];
+//         }
+//     });
+
+//     return result;
+// }
 
 int main(int argc, char* argv[]){
     // generate input
