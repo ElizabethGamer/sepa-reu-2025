@@ -1,3 +1,3 @@
-/Users/Elizabeth/Desktop/beginnerparlay/build/CMakeFiles/beginnerparlay.dir
-/Users/Elizabeth/Desktop/beginnerparlay/build/CMakeFiles/edit_cache.dir
-/Users/Elizabeth/Desktop/beginnerparlay/build/CMakeFiles/rebuild_cache.dir
+/Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/build/CMakeFiles/beginnerparlay.dir
+/Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/build/CMakeFiles/edit_cache.dir
+/Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/build/CMakeFiles/rebuild_cache.dir

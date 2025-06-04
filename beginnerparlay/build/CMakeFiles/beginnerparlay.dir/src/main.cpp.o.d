@@ -1,5 +1,5 @@
 CMakeFiles/beginnerparlay.dir/src/main.cpp.o: \
-  /Users/Elizabeth/Desktop/beginnerparlay/src/main.cpp \
+  /Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/src/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
@@ -1055,4 +1055,7 @@ CMakeFiles/beginnerparlay.dir/src/main.cpp.o: \
   /usr/local/include/parlay/delayed_sequence.h \
   /usr/local/include/parlay/monoid.h /usr/local/include/parlay/random.h \
   /usr/local/include/parlay/sequence.h \
-  /usr/local/include/parlay/relocation.h
+  /usr/local/include/parlay/relocation.h \
+  /Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/src/reduction.h \
+  /Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/src/prefix.h \
+  /Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/src/filter.h

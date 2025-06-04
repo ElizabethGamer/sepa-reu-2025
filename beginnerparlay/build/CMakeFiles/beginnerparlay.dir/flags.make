@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/Elizabeth/Desktop/beginnerparlay/include
+CXX_INCLUDES = -I/Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/include
 
 CXX_FLAGSx86_64 = -std=gnu++17 -arch x86_64
 
