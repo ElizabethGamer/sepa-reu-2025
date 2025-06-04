@@ -2046,6 +2046,9 @@ CMakeFiles/beginnerparlay.dir/src/main.cpp.o: /Users/Elizabeth/Downloads/receipt
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/src/filter.h \
+  /Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/src/prefix.h \
+  /Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/src/reduction.h \
   /usr/local/include/parlay/alloc.h \
   /usr/local/include/parlay/delayed.h \
   /usr/local/include/parlay/delayed_sequence.h \
