@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Elizabeth/Desktop/beginnerparlay
+CMAKE_SOURCE_DIR = /Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Elizabeth/Desktop/beginnerparlay/build
+CMAKE_BINARY_DIR = /Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Elizabeth/Desktop/beginnerparlay/build/CMakeFiles /Users/Elizabeth/Desktop/beginnerparlay/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/build/CMakeFiles /Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Elizabeth/Desktop/beginnerparlay/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Elizabeth/Downloads/receipts/parallel/sepa-reu-2025/beginnerparlay/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,30 @@ beginnerparlay/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginnerparlay.dir/build.make CMakeFiles/beginnerparlay.dir/build
 .PHONY : beginnerparlay/fast
 
+src/filter.o: src/filter.cpp.o
+.PHONY : src/filter.o
+
+# target to build an object file
+src/filter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginnerparlay.dir/build.make CMakeFiles/beginnerparlay.dir/src/filter.cpp.o
+.PHONY : src/filter.cpp.o
+
+src/filter.i: src/filter.cpp.i
+.PHONY : src/filter.i
+
+# target to preprocess a source file
+src/filter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginnerparlay.dir/build.make CMakeFiles/beginnerparlay.dir/src/filter.cpp.i
+.PHONY : src/filter.cpp.i
+
+src/filter.s: src/filter.cpp.s
+.PHONY : src/filter.s
+
+# target to generate assembly for a file
+src/filter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginnerparlay.dir/build.make CMakeFiles/beginnerparlay.dir/src/filter.cpp.s
+.PHONY : src/filter.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -153,6 +177,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginnerparlay.dir/build.make CMakeFiles/beginnerparlay.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/prefix.o: src/prefix.cpp.o
+.PHONY : src/prefix.o
+
+# target to build an object file
+src/prefix.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginnerparlay.dir/build.make CMakeFiles/beginnerparlay.dir/src/prefix.cpp.o
+.PHONY : src/prefix.cpp.o
+
+src/prefix.i: src/prefix.cpp.i
+.PHONY : src/prefix.i
+
+# target to preprocess a source file
+src/prefix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginnerparlay.dir/build.make CMakeFiles/beginnerparlay.dir/src/prefix.cpp.i
+.PHONY : src/prefix.cpp.i
+
+src/prefix.s: src/prefix.cpp.s
+.PHONY : src/prefix.s
+
+# target to generate assembly for a file
+src/prefix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginnerparlay.dir/build.make CMakeFiles/beginnerparlay.dir/src/prefix.cpp.s
+.PHONY : src/prefix.cpp.s
+
+src/reduction.o: src/reduction.cpp.o
+.PHONY : src/reduction.o
+
+# target to build an object file
+src/reduction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginnerparlay.dir/build.make CMakeFiles/beginnerparlay.dir/src/reduction.cpp.o
+.PHONY : src/reduction.cpp.o
+
+src/reduction.i: src/reduction.cpp.i
+.PHONY : src/reduction.i
+
+# target to preprocess a source file
+src/reduction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginnerparlay.dir/build.make CMakeFiles/beginnerparlay.dir/src/reduction.cpp.i
+.PHONY : src/reduction.cpp.i
+
+src/reduction.s: src/reduction.cpp.s
+.PHONY : src/reduction.s
+
+# target to generate assembly for a file
+src/reduction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginnerparlay.dir/build.make CMakeFiles/beginnerparlay.dir/src/reduction.cpp.s
+.PHONY : src/reduction.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +234,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... beginnerparlay"
+	@echo "... src/filter.o"
+	@echo "... src/filter.i"
+	@echo "... src/filter.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/prefix.o"
+	@echo "... src/prefix.i"
+	@echo "... src/prefix.s"
+	@echo "... src/reduction.o"
+	@echo "... src/reduction.i"
+	@echo "... src/reduction.s"
 .PHONY : help
 
 
