@@ -8,8 +8,8 @@
 #include <parlay/sequence.h>
 #include <parlay/parallel.h>
 
-template <typename T, typename BinOp>
-T reduction(typename parlay::sequence<T> array, int start, int end, BinOp binop){
+template <typename T, typename Func>
+T reduction(typename parlay::sequence<T> array, int start, int end, Func binop){
     if (start - end > 256) {
         T left, right;
         parlay::parallel_do(
@@ -23,8 +23,8 @@ T reduction(typename parlay::sequence<T> array, int start, int end, BinOp binop)
         while (start < end){
             sum = binop(sum, array[start]);
             start += 1;
-        }
+        };
 
         return sum;
-    }
-}
+    };
+};
