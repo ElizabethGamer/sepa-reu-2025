@@ -16,8 +16,10 @@ constexpr int NUM_ROUNDS = 5;
 
 std::string test_name(int id) {
   switch (id) {
-    case 0: return "integer_sort";
-    case 1: return "std::sort";
+    case 0: return "sort_inplace";
+    case 1: return "stable_sort_inplace";
+    case 2: return "integer_sort_inplace";
+    case 3: return "std::sort";
     default: assert(0);
   }
   return "";
@@ -47,8 +49,10 @@ double test(const sequence<T> &in, const GetKey &g, int id) {
     auto seq = in;
     internal::timer t;
     switch (id) {
-      case 0: integer_sort_inplace(make_slice(seq), g); break;
-      case 1: std::sort(seq.begin(), seq.end(), [&](const T &a, const T &b) { return g(a) < g(b); }); break;
+      case 0: sort_inplace(make_slice(seq), g); break;
+      case 1: stable_sort_inplace(make_slice(seq), g); break;
+      case 2: integer_sort_inplace(make_slice(seq), g); break;
+      case 3: std::sort(seq.begin(), seq.end(), [&](const T &a, const T &b) { return g(a) < g(b); }); break;
       default: assert(0);
     }
     t.stop();
