@@ -6,6 +6,7 @@
 #include <parlay/sequence.h>
 #include <parlay/generator.h>
 #include "parlay/random.h"
+
 using namespace std;
 using namespace parlay;
 using std::pair;
@@ -15,18 +16,14 @@ size_t n = 1e9;
 
 template<typename T, typename GetKey>
 double test(const sequence<T> &in, const GetKey &g) {
-  std::cout << "test_name: stable integer sort" << std::endl;
+  std::cout << "test_name: cpp11 sort" << std::endl;
   double total_time = 0;
   for (int i = 0; i <= NUM_ROUNDS; i++) {
     auto seq = in;
     internal::timer t;
-    /*switch (id) {
-      case 0: integer_sort_inplace2(make_slice(seq), g); break;
-      case 1: std::sort(seq.begin(), seq.end(), [&](const T &a, const T &b) { return g(a) < g(b); }); break;
-      default: assert(0);
-    }*/
-    parlay::stable_integer_sort_inplace(seq, g);
+    parlay::integer_sort_inplace(seq, g);
     t.stop();
+
     if (i == 0) {
       printf("Warmup: %f\n", t.total_time());
     } else {
@@ -82,7 +79,7 @@ void run_rep_dist() {
 
 template<class T>
 void run_all_sizes() {
-  vector<size_t> sizes{1000000,   10'000'000,   100'000'000,   1'000'000'000};
+  vector<size_t> sizes{1'000'000, 10'000'000, 100'000'000, 1'000'000'000, 2'000'000'000, 4'000'000'000};
   for (auto input_size : sizes) {
     n = input_size;
     printf("size: %ld\n", n);
