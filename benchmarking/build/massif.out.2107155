@@ -1,0 +1,1335 @@
+desc: --stacks=yes
+cmd: ./benchmark
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2219486416
+mem_heap_B=39717160
+mem_heap_extra_B=6792
+mem_stacks_B=3648
+heap_tree=detailed
+n5: 39717160 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25165824 0x1172CC: parlay::internal::pool_allocator::allocate_large(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n2: 25165824 0x117A44: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 16777216 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 16777216 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 16777216 0x139A78: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 16777216 0x13024E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n2: 16777216 0x126F01: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x120CED: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long, parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CA62: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A1CA: auto parlay::random_shuffle<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> >(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> const&, parlay::random) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x12A2F7: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x1212F5: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::initialize_default(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CF8F: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 8388608 0x16DB42: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 8388608 0x15E3DB: std::allocator_traits<parlay::allocator<std::pair<unsigned int, unsigned int> > >::allocate(parlay::allocator<std::pair<unsigned int, unsigned int> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 8388608 0x155CF2: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence_impl::uninitialized_sequence_impl(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 8388608 0x14D7A8: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 8388608 0x146BC0: void parlay::internal::integer_sort_inplace<std::pair<unsigned int, unsigned int>*, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::slice<std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x13F59A: void parlay::integer_sort_inplace<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x133FE6: double test<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A3F7: void run_all<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x123901: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 12300288 0x148E4D: __gnu_cxx::new_allocator<parlay::internal::Deque<parlay::WorkStealingJob> >::allocate(unsigned long, void const*) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 12300288 0x140595: std::allocator_traits<std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::allocate(std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 12300288 0x135641: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 12300288 0x12C368: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_create_storage(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 12300288 0x123F7A: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_Vector_base(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 12300288 0x11E382: std::vector<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::vector(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 12300288 0x11A719: parlay::scheduler<parlay::WorkStealingJob>::scheduler(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 12300288 0x115EED: parlay::internal::get_current_scheduler() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 12300288 0x115F4B: parlay::num_workers() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 12300288 0x121243: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 12300288 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 12300288 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 12300288 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 12300288 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 12300288 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 1572864 0x1169B9: parlay::internal::block_allocator::allocate_blocks(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 1572864 0x116B09: parlay::internal::block_allocator::get_list() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 1572864 0x1170C5: parlay::internal::block_allocator::alloc() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 1572864 0x117A99: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 1572864 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n3: 1572864 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 786432 0x138C12: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 786432 0x12F1A2: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 786432 0x126649: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 786432 0x12061D: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::sequence(unsigned long, parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 786432 0x11C2B4: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n0: 786432 in 3 places, all below massif's threshold (1.00%)
+       n1: 524288 0x13956C: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 524288 0x12FDF4: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 524288 0x126C0B: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n0: 524288 in 2 places, all below massif's threshold (1.00%)
+       n0: 262144 in 1 place, below massif's threshold (1.00%)
+ n1: 460544 0x11F654: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::initialize() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 460544 0x11B208: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::ThreadSpecific() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 460544 0x116BC7: parlay::internal::block_allocator::block_allocator(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n2: 460544 0x1174DE: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}::operator()(unsigned long) const (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 427648 0x1175E3: auto parlay::make_unique_array<parlay::internal::block_allocator, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}>(unsigned long, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 427648 0x1178D8: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 427648 0x117E2C: parlay::internal::get_default_allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 427648 0x130600: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 427648 0x1277E1: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::storage_impl() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 427648 0x12123E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 427648 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 427648 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 427648 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 427648 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 427648 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n0: 32896 in 1 place, below massif's threshold (1.00%)
+ n0: 217640 in 18 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=3862852953
+mem_heap_B=39979304
+mem_heap_extra_B=6880
+mem_stacks_B=9688
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=6200171315
+mem_heap_B=39979352
+mem_heap_extra_B=6912
+mem_stacks_B=9904
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=9352493169
+mem_heap_B=39979400
+mem_heap_extra_B=6944
+mem_stacks_B=9864
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=10835939228
+mem_heap_B=39979448
+mem_heap_extra_B=6976
+mem_stacks_B=5992
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=12875677548
+mem_heap_B=39979448
+mem_heap_extra_B=6976
+mem_stacks_B=9352
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=14629298067
+mem_heap_B=39979496
+mem_heap_extra_B=7008
+mem_stacks_B=9904
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=17608858637
+mem_heap_B=39979544
+mem_heap_extra_B=7040
+mem_stacks_B=9856
+heap_tree=detailed
+n5: 39979544 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25165824 0x1172CC: parlay::internal::pool_allocator::allocate_large(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n2: 25165824 0x117A44: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 16777216 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 16777216 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 16777216 0x139A78: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 16777216 0x13024E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n2: 16777216 0x126F01: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x120CED: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long, parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CA62: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A1CA: auto parlay::random_shuffle<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> >(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> const&, parlay::random) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x12A2F7: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x1212F5: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::initialize_default(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CF8F: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 8388608 0x16DB42: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 8388608 0x15E3DB: std::allocator_traits<parlay::allocator<std::pair<unsigned int, unsigned int> > >::allocate(parlay::allocator<std::pair<unsigned int, unsigned int> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 8388608 0x155CF2: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence_impl::uninitialized_sequence_impl(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 8388608 0x14D7A8: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 8388608 0x146BC0: void parlay::internal::integer_sort_inplace<std::pair<unsigned int, unsigned int>*, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::slice<std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x13F59A: void parlay::integer_sort_inplace<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x133FE6: double test<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A3F7: void run_all<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x123901: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 12300288 0x148E4D: __gnu_cxx::new_allocator<parlay::internal::Deque<parlay::WorkStealingJob> >::allocate(unsigned long, void const*) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 12300288 0x140595: std::allocator_traits<std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::allocate(std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 12300288 0x135641: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 12300288 0x12C368: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_create_storage(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 12300288 0x123F7A: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_Vector_base(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 12300288 0x11E382: std::vector<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::vector(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 12300288 0x11A719: parlay::scheduler<parlay::WorkStealingJob>::scheduler(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 12300288 0x115EED: parlay::internal::get_current_scheduler() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 12300288 0x115F4B: parlay::num_workers() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 12300288 0x121243: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 12300288 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 12300288 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 12300288 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 12300288 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 12300288 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 1834960 0x1169B9: parlay::internal::block_allocator::allocate_blocks(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 1834960 0x116B09: parlay::internal::block_allocator::get_list() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 1834960 0x1170C5: parlay::internal::block_allocator::alloc() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 1834960 0x117A99: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 1834960 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n3: 1834960 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 1048528 0x138C12: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 1048528 0x12F1A2: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n2: 1048528 0x126649: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 786432 0x12061D: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::sequence(unsigned long, parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 786432 0x11C2B4: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n0: 786432 in 3 places, all below massif's threshold (1.00%)
+          n0: 262096 in 1 place, below massif's threshold (1.00%)
+       n1: 524288 0x13956C: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 524288 0x12FDF4: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 524288 0x126C0B: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n0: 524288 in 2 places, all below massif's threshold (1.00%)
+       n0: 262144 in 1 place, below massif's threshold (1.00%)
+ n1: 460544 0x11F654: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::initialize() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 460544 0x11B208: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::ThreadSpecific() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 460544 0x116BC7: parlay::internal::block_allocator::block_allocator(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n2: 460544 0x1174DE: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}::operator()(unsigned long) const (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 427648 0x1175E3: auto parlay::make_unique_array<parlay::internal::block_allocator, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}>(unsigned long, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 427648 0x1178D8: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 427648 0x117E2C: parlay::internal::get_default_allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 427648 0x130600: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 427648 0x1277E1: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::storage_impl() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 427648 0x12123E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 427648 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 427648 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 427648 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 427648 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 427648 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n0: 32896 in 1 place, below massif's threshold (1.00%)
+ n0: 217928 in 19 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=19647505407
+mem_heap_B=39979616
+mem_heap_extra_B=7088
+mem_stacks_B=6096
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=22292787321
+mem_heap_B=39979640
+mem_heap_extra_B=7104
+mem_stacks_B=9504
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=24796101417
+mem_heap_B=39979688
+mem_heap_extra_B=7136
+mem_stacks_B=9968
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=27299415557
+mem_heap_B=39979736
+mem_heap_extra_B=7168
+mem_stacks_B=6120
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=29524583686
+mem_heap_B=39979784
+mem_heap_extra_B=7200
+mem_stacks_B=7672
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=32027897805
+mem_heap_B=39979784
+mem_heap_extra_B=7200
+mem_stacks_B=9376
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=34253065921
+mem_heap_B=39979832
+mem_heap_extra_B=7232
+mem_stacks_B=9696
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=36428389805
+mem_heap_B=39979880
+mem_heap_extra_B=7264
+mem_stacks_B=5624
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=38288867686
+mem_heap_B=39988600
+mem_heap_extra_B=7336
+mem_stacks_B=128984
+heap_tree=detailed
+n5: 39988600 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25165824 0x1172CC: parlay::internal::pool_allocator::allocate_large(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n2: 25165824 0x117A44: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 16777216 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 16777216 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 16777216 0x139A78: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 16777216 0x13024E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n2: 16777216 0x126F01: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x120CED: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long, parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CA62: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A1CA: auto parlay::random_shuffle<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> >(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> const&, parlay::random) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x12A2F7: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x1212F5: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::initialize_default(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CF8F: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 8388608 0x16DB42: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 8388608 0x15E3DB: std::allocator_traits<parlay::allocator<std::pair<unsigned int, unsigned int> > >::allocate(parlay::allocator<std::pair<unsigned int, unsigned int> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 8388608 0x155CF2: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence_impl::uninitialized_sequence_impl(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 8388608 0x14D7A8: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 8388608 0x146BC0: void parlay::internal::integer_sort_inplace<std::pair<unsigned int, unsigned int>*, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::slice<std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x13F59A: void parlay::integer_sort_inplace<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x133FE6: double test<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A3F7: void run_all<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x123901: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 12300288 0x148E4D: __gnu_cxx::new_allocator<parlay::internal::Deque<parlay::WorkStealingJob> >::allocate(unsigned long, void const*) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 12300288 0x140595: std::allocator_traits<std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::allocate(std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 12300288 0x135641: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 12300288 0x12C368: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_create_storage(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 12300288 0x123F7A: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_Vector_base(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 12300288 0x11E382: std::vector<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::vector(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 12300288 0x11A719: parlay::scheduler<parlay::WorkStealingJob>::scheduler(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 12300288 0x115EED: parlay::internal::get_current_scheduler() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 12300288 0x115F4B: parlay::num_workers() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 12300288 0x121243: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 12300288 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 12300288 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 12300288 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 12300288 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 12300288 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 1834960 0x1169B9: parlay::internal::block_allocator::allocate_blocks(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 1834960 0x116B09: parlay::internal::block_allocator::get_list() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 1834960 0x1170C5: parlay::internal::block_allocator::alloc() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 1834960 0x117A99: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 1834960 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n3: 1834960 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 1048528 0x138C12: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 1048528 0x12F1A2: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n2: 1048528 0x126649: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 786432 0x12061D: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::sequence(unsigned long, parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 786432 0x11C2B4: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n0: 786432 in 3 places, all below massif's threshold (1.00%)
+          n0: 262096 in 1 place, below massif's threshold (1.00%)
+       n1: 524288 0x13956C: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 524288 0x12FDF4: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 524288 0x126C0B: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n0: 524288 in 2 places, all below massif's threshold (1.00%)
+       n0: 262144 in 1 place, below massif's threshold (1.00%)
+ n1: 460544 0x11F654: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::initialize() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 460544 0x11B208: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::ThreadSpecific() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 460544 0x116BC7: parlay::internal::block_allocator::block_allocator(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n2: 460544 0x1174DE: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}::operator()(unsigned long) const (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 427648 0x1175E3: auto parlay::make_unique_array<parlay::internal::block_allocator, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}>(unsigned long, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 427648 0x1178D8: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 427648 0x117E2C: parlay::internal::get_default_allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 427648 0x130600: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 427648 0x1277E1: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::storage_impl() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 427648 0x12123E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 427648 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 427648 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 427648 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 427648 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 427648 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n0: 32896 in 1 place, below massif's threshold (1.00%)
+ n0: 226984 in 22 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=40987254117
+mem_heap_B=40242136
+mem_heap_extra_B=7392
+mem_stacks_B=155536
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=42606285993
+mem_heap_B=40242136
+mem_heap_extra_B=7392
+mem_stacks_B=150800
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=45304672416
+mem_heap_B=40241488
+mem_heap_extra_B=6960
+mem_stacks_B=155664
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=46384026992
+mem_heap_B=40241536
+mem_heap_extra_B=6992
+mem_stacks_B=152568
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=48542736117
+mem_heap_B=40241536
+mem_heap_extra_B=6992
+mem_stacks_B=155904
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=50701445261
+mem_heap_B=40241584
+mem_heap_extra_B=7024
+mem_stacks_B=156040
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=52860154403
+mem_heap_B=40241632
+mem_heap_extra_B=7056
+mem_stacks_B=156368
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=55558540819
+mem_heap_B=40241680
+mem_heap_extra_B=7088
+mem_stacks_B=152584
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=57717249932
+mem_heap_B=40241728
+mem_heap_extra_B=7120
+mem_stacks_B=152496
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=58796604509
+mem_heap_B=40241728
+mem_heap_extra_B=7120
+mem_stacks_B=156144
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=61494990938
+mem_heap_B=40241800
+mem_heap_extra_B=7168
+mem_stacks_B=156560
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=63163867740
+mem_heap_B=40241800
+mem_heap_extra_B=7168
+mem_stacks_B=150944
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=65667182941
+mem_heap_B=40241848
+mem_heap_extra_B=7200
+mem_stacks_B=155784
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=67336059744
+mem_heap_B=40241896
+mem_heap_extra_B=7232
+mem_stacks_B=152264
+heap_tree=detailed
+n5: 40241896 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25165824 0x1172CC: parlay::internal::pool_allocator::allocate_large(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n2: 25165824 0x117A44: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 16777216 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 16777216 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 16777216 0x139A78: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 16777216 0x13024E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n2: 16777216 0x126F01: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x120CED: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long, parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CA62: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A1CA: auto parlay::random_shuffle<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> >(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> const&, parlay::random) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x12A2F7: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x1212F5: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::initialize_default(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CF8F: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 8388608 0x16DB42: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 8388608 0x15E3DB: std::allocator_traits<parlay::allocator<std::pair<unsigned int, unsigned int> > >::allocate(parlay::allocator<std::pair<unsigned int, unsigned int> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 8388608 0x155CF2: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence_impl::uninitialized_sequence_impl(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 8388608 0x14D7A8: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 8388608 0x146BC0: void parlay::internal::integer_sort_inplace<std::pair<unsigned int, unsigned int>*, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::slice<std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x13F59A: void parlay::integer_sort_inplace<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x133FE6: double test<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A3F7: void run_all<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x123901: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 12300288 0x148E4D: __gnu_cxx::new_allocator<parlay::internal::Deque<parlay::WorkStealingJob> >::allocate(unsigned long, void const*) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 12300288 0x140595: std::allocator_traits<std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::allocate(std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 12300288 0x135641: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 12300288 0x12C368: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_create_storage(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 12300288 0x123F7A: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_Vector_base(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 12300288 0x11E382: std::vector<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::vector(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 12300288 0x11A719: parlay::scheduler<parlay::WorkStealingJob>::scheduler(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 12300288 0x115EED: parlay::internal::get_current_scheduler() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 12300288 0x115F4B: parlay::num_workers() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 12300288 0x121243: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 12300288 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 12300288 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 12300288 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 12300288 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 12300288 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 2097104 0x1169B9: parlay::internal::block_allocator::allocate_blocks(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 2097104 0x116B09: parlay::internal::block_allocator::get_list() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 2097104 0x1170C5: parlay::internal::block_allocator::alloc() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 2097104 0x117A99: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 2097104 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n3: 2097104 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 1310672 0x138C12: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 1310672 0x12F1A2: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n2: 1310672 0x126649: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 1048576 0x12061D: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::sequence(unsigned long, parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 1048576 0x11C2B4: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n0: 1048576 in 4 places, all below massif's threshold (1.00%)
+          n0: 262096 in 1 place, below massif's threshold (1.00%)
+       n1: 524288 0x13956C: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 524288 0x12FDF4: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 524288 0x126C0B: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n0: 524288 in 2 places, all below massif's threshold (1.00%)
+       n0: 262144 in 1 place, below massif's threshold (1.00%)
+ n1: 460544 0x11F654: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::initialize() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 460544 0x11B208: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::ThreadSpecific() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 460544 0x116BC7: parlay::internal::block_allocator::block_allocator(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n2: 460544 0x1174DE: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}::operator()(unsigned long) const (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 427648 0x1175E3: auto parlay::make_unique_array<parlay::internal::block_allocator, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}>(unsigned long, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 427648 0x1178D8: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 427648 0x117E2C: parlay::internal::get_default_allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 427648 0x130600: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 427648 0x1277E1: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::storage_impl() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 427648 0x12123E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 427648 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 427648 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 427648 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 427648 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 427648 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n0: 32896 in 1 place, below massif's threshold (1.00%)
+ n0: 218136 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=69839374942
+mem_heap_B=40241944
+mem_heap_extra_B=7264
+mem_stacks_B=152528
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=71508251752
+mem_heap_B=40241944
+mem_heap_extra_B=7264
+mem_stacks_B=156040
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=73177128544
+mem_heap_B=40241992
+mem_heap_extra_B=7296
+mem_stacks_B=152536
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=75680443743
+mem_heap_B=40242040
+mem_heap_extra_B=7328
+mem_stacks_B=152432
+heap_tree=detailed
+n5: 40242040 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25165824 0x1172CC: parlay::internal::pool_allocator::allocate_large(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n2: 25165824 0x117A44: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 16777216 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 16777216 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 16777216 0x139A78: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 16777216 0x13024E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n2: 16777216 0x126F01: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x120CED: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long, parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CA62: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A1CA: auto parlay::random_shuffle<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> >(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> const&, parlay::random) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x12A2F7: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x1212F5: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::initialize_default(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CF8F: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 8388608 0x16DB42: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 8388608 0x15E3DB: std::allocator_traits<parlay::allocator<std::pair<unsigned int, unsigned int> > >::allocate(parlay::allocator<std::pair<unsigned int, unsigned int> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 8388608 0x155CF2: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence_impl::uninitialized_sequence_impl(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 8388608 0x14D7A8: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 8388608 0x146BC0: void parlay::internal::integer_sort_inplace<std::pair<unsigned int, unsigned int>*, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::slice<std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x13F59A: void parlay::integer_sort_inplace<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x133FE6: double test<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A3F7: void run_all<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x123901: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 12300288 0x148E4D: __gnu_cxx::new_allocator<parlay::internal::Deque<parlay::WorkStealingJob> >::allocate(unsigned long, void const*) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 12300288 0x140595: std::allocator_traits<std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::allocate(std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 12300288 0x135641: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 12300288 0x12C368: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_create_storage(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 12300288 0x123F7A: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_Vector_base(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 12300288 0x11E382: std::vector<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::vector(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 12300288 0x11A719: parlay::scheduler<parlay::WorkStealingJob>::scheduler(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 12300288 0x115EED: parlay::internal::get_current_scheduler() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 12300288 0x115F4B: parlay::num_workers() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 12300288 0x121243: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 12300288 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 12300288 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 12300288 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 12300288 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 12300288 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 2097104 0x1169B9: parlay::internal::block_allocator::allocate_blocks(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 2097104 0x116B09: parlay::internal::block_allocator::get_list() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 2097104 0x1170C5: parlay::internal::block_allocator::alloc() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 2097104 0x117A99: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 2097104 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n3: 2097104 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 1310672 0x138C12: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 1310672 0x12F1A2: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n2: 1310672 0x126649: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 1048576 0x12061D: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::sequence(unsigned long, parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 1048576 0x11C2B4: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n0: 1048576 in 4 places, all below massif's threshold (1.00%)
+          n0: 262096 in 1 place, below massif's threshold (1.00%)
+       n1: 524288 0x13956C: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 524288 0x12FDF4: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 524288 0x126C0B: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n0: 524288 in 2 places, all below massif's threshold (1.00%)
+       n0: 262144 in 1 place, below massif's threshold (1.00%)
+ n1: 460544 0x11F654: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::initialize() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 460544 0x11B208: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::ThreadSpecific() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 460544 0x116BC7: parlay::internal::block_allocator::block_allocator(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n2: 460544 0x1174DE: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}::operator()(unsigned long) const (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 427648 0x1175E3: auto parlay::make_unique_array<parlay::internal::block_allocator, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}>(unsigned long, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 427648 0x1178D8: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 427648 0x117E2C: parlay::internal::get_default_allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 427648 0x130600: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 427648 0x1277E1: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::storage_impl() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 427648 0x12123E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 427648 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 427648 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 427648 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 427648 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 427648 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n0: 32896 in 1 place, below massif's threshold (1.00%)
+ n0: 218280 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=77349320538
+mem_heap_B=40242040
+mem_heap_extra_B=7328
+mem_stacks_B=155760
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=79018197353
+mem_heap_B=40242088
+mem_heap_extra_B=7360
+mem_stacks_B=152352
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=81521512547
+mem_heap_B=40242176
+mem_heap_extra_B=7416
+mem_stacks_B=152432
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=84024827756
+mem_heap_B=40242176
+mem_heap_extra_B=7416
+mem_stacks_B=150552
+heap_tree=detailed
+n5: 40242176 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25165824 0x1172CC: parlay::internal::pool_allocator::allocate_large(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n2: 25165824 0x117A44: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 16777216 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 16777216 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 16777216 0x139A78: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 16777216 0x13024E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n2: 16777216 0x126F01: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x120CED: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long, parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CA62: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A1CA: auto parlay::random_shuffle<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> >(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> const&, parlay::random) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x12A2F7: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x1212F5: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::initialize_default(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CF8F: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 8388608 0x16DB42: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 8388608 0x15E3DB: std::allocator_traits<parlay::allocator<std::pair<unsigned int, unsigned int> > >::allocate(parlay::allocator<std::pair<unsigned int, unsigned int> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 8388608 0x155CF2: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence_impl::uninitialized_sequence_impl(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 8388608 0x14D7A8: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 8388608 0x146BC0: void parlay::internal::integer_sort_inplace<std::pair<unsigned int, unsigned int>*, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::slice<std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x13F59A: void parlay::integer_sort_inplace<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x133FE6: double test<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A3F7: void run_all<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x123901: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 12300288 0x148E4D: __gnu_cxx::new_allocator<parlay::internal::Deque<parlay::WorkStealingJob> >::allocate(unsigned long, void const*) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 12300288 0x140595: std::allocator_traits<std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::allocate(std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 12300288 0x135641: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 12300288 0x12C368: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_create_storage(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 12300288 0x123F7A: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_Vector_base(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 12300288 0x11E382: std::vector<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::vector(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 12300288 0x11A719: parlay::scheduler<parlay::WorkStealingJob>::scheduler(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 12300288 0x115EED: parlay::internal::get_current_scheduler() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 12300288 0x115F4B: parlay::num_workers() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 12300288 0x121243: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 12300288 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 12300288 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 12300288 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 12300288 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 12300288 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 2097104 0x1169B9: parlay::internal::block_allocator::allocate_blocks(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 2097104 0x116B09: parlay::internal::block_allocator::get_list() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 2097104 0x1170C5: parlay::internal::block_allocator::alloc() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 2097104 0x117A99: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 2097104 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n3: 2097104 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 1310672 0x138C12: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 1310672 0x12F1A2: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n2: 1310672 0x126649: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 1048576 0x12061D: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::sequence(unsigned long, parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 1048576 0x11C2B4: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n0: 1048576 in 4 places, all below massif's threshold (1.00%)
+          n0: 262096 in 1 place, below massif's threshold (1.00%)
+       n1: 524288 0x13956C: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 524288 0x12FDF4: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 524288 0x126C0B: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n0: 524288 in 2 places, all below massif's threshold (1.00%)
+       n0: 262144 in 1 place, below massif's threshold (1.00%)
+ n1: 460544 0x11F654: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::initialize() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 460544 0x11B208: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::ThreadSpecific() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 460544 0x116BC7: parlay::internal::block_allocator::block_allocator(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n2: 460544 0x1174DE: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}::operator()(unsigned long) const (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 427648 0x1175E3: auto parlay::make_unique_array<parlay::internal::block_allocator, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}>(unsigned long, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 427648 0x1178D8: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 427648 0x117E2C: parlay::internal::get_default_allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 427648 0x130600: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 427648 0x1277E1: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::storage_impl() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 427648 0x12123E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 427648 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 427648 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 427648 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 427648 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 427648 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n0: 32896 in 1 place, below massif's threshold (1.00%)
+ n0: 218416 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=85693704563
+mem_heap_B=40241504
+mem_heap_extra_B=6968
+mem_stacks_B=156664
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=87362581354
+mem_heap_B=40241504
+mem_heap_extra_B=6968
+mem_stacks_B=160064
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=89865896550
+mem_heap_B=40241552
+mem_heap_extra_B=7000
+mem_stacks_B=160336
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=91534773345
+mem_heap_B=40241600
+mem_heap_extra_B=7032
+mem_stacks_B=156560
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=93203650152
+mem_heap_B=40241600
+mem_heap_extra_B=7032
+mem_stacks_B=160008
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=94872526955
+mem_heap_B=40241648
+mem_heap_extra_B=7064
+mem_stacks_B=160040
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=97375842154
+mem_heap_B=40241696
+mem_heap_extra_B=7096
+mem_stacks_B=156584
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=99044718960
+mem_heap_B=40241696
+mem_heap_extra_B=7096
+mem_stacks_B=160104
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=100713595751
+mem_heap_B=40241744
+mem_heap_extra_B=7128
+mem_stacks_B=159928
+heap_tree=detailed
+n5: 40241744 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25165824 0x1172CC: parlay::internal::pool_allocator::allocate_large(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n2: 25165824 0x117A44: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 16777216 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 16777216 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 16777216 0x139A78: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 16777216 0x13024E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n2: 16777216 0x126F01: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x120CED: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long, parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CA62: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A1CA: auto parlay::random_shuffle<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> >(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> const&, parlay::random) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x12A2F7: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x1212F5: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::initialize_default(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CF8F: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 8388608 0x16DB42: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 8388608 0x15E3DB: std::allocator_traits<parlay::allocator<std::pair<unsigned int, unsigned int> > >::allocate(parlay::allocator<std::pair<unsigned int, unsigned int> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 8388608 0x155CF2: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence_impl::uninitialized_sequence_impl(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 8388608 0x14D7A8: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 8388608 0x146BC0: void parlay::internal::integer_sort_inplace<std::pair<unsigned int, unsigned int>*, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::slice<std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x13F59A: void parlay::integer_sort_inplace<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x133FE6: double test<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A3F7: void run_all<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x123901: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 12300288 0x148E4D: __gnu_cxx::new_allocator<parlay::internal::Deque<parlay::WorkStealingJob> >::allocate(unsigned long, void const*) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 12300288 0x140595: std::allocator_traits<std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::allocate(std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 12300288 0x135641: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 12300288 0x12C368: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_create_storage(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 12300288 0x123F7A: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_Vector_base(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 12300288 0x11E382: std::vector<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::vector(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 12300288 0x11A719: parlay::scheduler<parlay::WorkStealingJob>::scheduler(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 12300288 0x115EED: parlay::internal::get_current_scheduler() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 12300288 0x115F4B: parlay::num_workers() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 12300288 0x121243: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 12300288 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 12300288 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 12300288 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 12300288 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 12300288 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 2097104 0x1169B9: parlay::internal::block_allocator::allocate_blocks(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 2097104 0x116B09: parlay::internal::block_allocator::get_list() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 2097104 0x1170C5: parlay::internal::block_allocator::alloc() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 2097104 0x117A99: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 2097104 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n3: 2097104 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 1310672 0x138C12: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 1310672 0x12F1A2: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n2: 1310672 0x126649: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 1048576 0x12061D: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::sequence(unsigned long, parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 1048576 0x11C2B4: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n0: 1048576 in 4 places, all below massif's threshold (1.00%)
+          n0: 262096 in 1 place, below massif's threshold (1.00%)
+       n1: 524288 0x13956C: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 524288 0x12FDF4: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 524288 0x126C0B: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n0: 524288 in 2 places, all below massif's threshold (1.00%)
+       n0: 262144 in 1 place, below massif's threshold (1.00%)
+ n1: 460544 0x11F654: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::initialize() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 460544 0x11B208: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::ThreadSpecific() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 460544 0x116BC7: parlay::internal::block_allocator::block_allocator(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n2: 460544 0x1174DE: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}::operator()(unsigned long) const (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 427648 0x1175E3: auto parlay::make_unique_array<parlay::internal::block_allocator, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}>(unsigned long, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 427648 0x1178D8: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 427648 0x117E2C: parlay::internal::get_default_allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 427648 0x130600: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 427648 0x1277E1: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::storage_impl() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 427648 0x12123E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 427648 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 427648 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 427648 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 427648 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 427648 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n0: 32896 in 1 place, below massif's threshold (1.00%)
+ n0: 217984 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=103216910960
+mem_heap_B=40250464
+mem_heap_extra_B=7200
+mem_stacks_B=156440
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=104296265562
+mem_heap_B=40241816
+mem_heap_extra_B=7176
+mem_stacks_B=155848
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=105375620221
+mem_heap_B=40241816
+mem_heap_extra_B=7176
+mem_stacks_B=160328
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=106454974797
+mem_heap_B=40241816
+mem_heap_extra_B=7176
+mem_stacks_B=161864
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=107534329378
+mem_heap_B=40241816
+mem_heap_extra_B=7176
+mem_stacks_B=160496
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=108613683964
+mem_heap_B=40241864
+mem_heap_extra_B=7208
+mem_stacks_B=162600
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=109693038540
+mem_heap_B=40241864
+mem_heap_extra_B=7208
+mem_stacks_B=164816
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=110252453560
+mem_heap_B=40504008
+mem_heap_extra_B=7328
+mem_stacks_B=162504
+heap_tree=peak
+n5: 40504008 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25165824 0x1172CC: parlay::internal::pool_allocator::allocate_large(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n2: 25165824 0x117A44: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 16777216 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 16777216 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 16777216 0x139A78: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 16777216 0x13024E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n2: 16777216 0x126F01: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x120CED: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long, parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CA62: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A1CA: auto parlay::random_shuffle<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> >(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> const&, parlay::random) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x12A2F7: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x1212F5: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::initialize_default(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CF8F: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 8388608 0x16DB42: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 8388608 0x15E3DB: std::allocator_traits<parlay::allocator<std::pair<unsigned int, unsigned int> > >::allocate(parlay::allocator<std::pair<unsigned int, unsigned int> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 8388608 0x155CF2: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence_impl::uninitialized_sequence_impl(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 8388608 0x14D7A8: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 8388608 0x146BC0: void parlay::internal::integer_sort_inplace<std::pair<unsigned int, unsigned int>*, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::slice<std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x13F59A: void parlay::integer_sort_inplace<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x133FE6: double test<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A3F7: void run_all<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x123901: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 12300288 0x148E4D: __gnu_cxx::new_allocator<parlay::internal::Deque<parlay::WorkStealingJob> >::allocate(unsigned long, void const*) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 12300288 0x140595: std::allocator_traits<std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::allocate(std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 12300288 0x135641: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 12300288 0x12C368: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_create_storage(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 12300288 0x123F7A: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_Vector_base(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 12300288 0x11E382: std::vector<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::vector(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 12300288 0x11A719: parlay::scheduler<parlay::WorkStealingJob>::scheduler(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 12300288 0x115EED: parlay::internal::get_current_scheduler() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 12300288 0x115F4B: parlay::num_workers() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 12300288 0x121243: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 12300288 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 12300288 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 12300288 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 12300288 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 12300288 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 2359248 0x1169B9: parlay::internal::block_allocator::allocate_blocks(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 2359248 0x116B09: parlay::internal::block_allocator::get_list() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 2359248 0x1170C5: parlay::internal::block_allocator::alloc() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 2359248 0x117A99: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 2359248 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n3: 2359248 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 1310672 0x138C12: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 1310672 0x12F1A2: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n2: 1310672 0x126649: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 1048576 0x12061D: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::sequence(unsigned long, parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 1048576 0x11C2B4: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n0: 1048576 in 4 places, all below massif's threshold (1.00%)
+          n0: 262096 in 1 place, below massif's threshold (1.00%)
+       n1: 786432 0x13956C: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 786432 0x12FDF4: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n2: 786432 0x126C0B: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 524288 0x1324A9: parlay::sequence<unsigned int, parlay::allocator<unsigned int>, false>::sequence(unsigned long, parlay::sequence<unsigned int, parlay::allocator<unsigned int>, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 524288 0x128F3C: parlay::sequence<unsigned int, parlay::allocator<unsigned int>, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n0: 524288 in 2 places, all below massif's threshold (1.00%)
+          n0: 262144 in 1 place, below massif's threshold (1.00%)
+       n0: 262144 in 1 place, below massif's threshold (1.00%)
+ n1: 460544 0x11F654: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::initialize() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 460544 0x11B208: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::ThreadSpecific() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 460544 0x116BC7: parlay::internal::block_allocator::block_allocator(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n2: 460544 0x1174DE: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}::operator()(unsigned long) const (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 427648 0x1175E3: auto parlay::make_unique_array<parlay::internal::block_allocator, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}>(unsigned long, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 427648 0x1178D8: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 427648 0x117E2C: parlay::internal::get_default_allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 427648 0x130600: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 427648 0x1277E1: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::storage_impl() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 427648 0x12123E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 427648 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 427648 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 427648 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 427648 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 427648 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n0: 32896 in 1 place, below massif's threshold (1.00%)
+ n0: 218104 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=111331808137
+mem_heap_B=40766200
+mem_heap_extra_B=7416
+mem_stacks_B=164200
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=112411162729
+mem_heap_B=40766248
+mem_heap_extra_B=7448
+mem_stacks_B=161016
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=113490517311
+mem_heap_B=40766248
+mem_heap_extra_B=7448
+mem_stacks_B=168144
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=114569871890
+mem_heap_B=40766248
+mem_heap_extra_B=7448
+mem_stacks_B=164240
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=115649226478
+mem_heap_B=40766296
+mem_heap_extra_B=7480
+mem_stacks_B=160632
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=116728581054
+mem_heap_B=40766296
+mem_heap_extra_B=7480
+mem_stacks_B=172568
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=117807935650
+mem_heap_B=40766344
+mem_heap_extra_B=7512
+mem_stacks_B=162600
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=118887290232
+mem_heap_B=40766344
+mem_heap_extra_B=7512
+mem_stacks_B=164960
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=119966644809
+mem_heap_B=40766344
+mem_heap_extra_B=7512
+mem_stacks_B=164200
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=121045999388
+mem_heap_B=40766392
+mem_heap_extra_B=7544
+mem_stacks_B=160608
+heap_tree=detailed
+n5: 40766392 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25165824 0x1172CC: parlay::internal::pool_allocator::allocate_large(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n2: 25165824 0x117A44: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 16777216 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 16777216 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 16777216 0x139A78: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 16777216 0x13024E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n2: 16777216 0x126F01: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x120CED: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long, parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CA62: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A1CA: auto parlay::random_shuffle<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> >(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false> const&, parlay::random) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x12A2F7: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x1212F5: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::initialize_default(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x11CF8F: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 8388608 0x16DB42: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 8388608 0x15E3DB: std::allocator_traits<parlay::allocator<std::pair<unsigned int, unsigned int> > >::allocate(parlay::allocator<std::pair<unsigned int, unsigned int> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 8388608 0x155CF2: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence_impl::uninitialized_sequence_impl(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 8388608 0x14D7A8: parlay::internal::uninitialized_sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> > >::uninitialized_sequence(unsigned long, parlay::allocator<std::pair<unsigned int, unsigned int> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 8388608 0x146BC0: void parlay::internal::integer_sort_inplace<std::pair<unsigned int, unsigned int>*, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::slice<std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 8388608 0x13F59A: void parlay::integer_sort_inplace<parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 8388608 0x133FE6: double test<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 8388608 0x12A3F7: void run_all<std::pair<unsigned int, unsigned int>, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1}>(parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> const&, run_rep_dist<unsigned int>()::{lambda(std::pair<unsigned int, unsigned int> const&)#1} const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 8388608 0x123901: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 8388608 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n0: 8388608 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 12300288 0x148E4D: __gnu_cxx::new_allocator<parlay::internal::Deque<parlay::WorkStealingJob> >::allocate(unsigned long, void const*) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 12300288 0x140595: std::allocator_traits<std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::allocate(std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> >&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 12300288 0x135641: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 12300288 0x12C368: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_M_create_storage(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 12300288 0x123F7A: std::_Vector_base<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::_Vector_base(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 12300288 0x11E382: std::vector<parlay::internal::Deque<parlay::WorkStealingJob>, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > >::vector(unsigned long, std::allocator<parlay::internal::Deque<parlay::WorkStealingJob> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 12300288 0x11A719: parlay::scheduler<parlay::WorkStealingJob>::scheduler(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 12300288 0x115EED: parlay::internal::get_current_scheduler() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 12300288 0x115F4B: parlay::num_workers() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 12300288 0x121243: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 12300288 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 12300288 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 12300288 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 12300288 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 12300288 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+ n1: 2621392 0x1169B9: parlay::internal::block_allocator::allocate_blocks(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 2621392 0x116B09: parlay::internal::block_allocator::get_list() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 2621392 0x1170C5: parlay::internal::block_allocator::alloc() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n1: 2621392 0x117A99: parlay::internal::pool_allocator::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 2621392 0x14ABAE: parlay::allocator<std::byte>::allocate(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n3: 2621392 0x142ACE: std::allocator_traits<parlay::allocator<std::byte> >::allocate(parlay::allocator<std::byte>&, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 1310672 0x138C12: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 1310672 0x12F1A2: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n2: 1310672 0x126649: parlay::sequence_internal::sequence_base<unsigned long, parlay::allocator<unsigned long>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 1048576 0x12061D: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::sequence(unsigned long, parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 1048576 0x11C2B4: parlay::sequence<unsigned long, parlay::allocator<unsigned long>, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n0: 1048576 in 4 places, all below massif's threshold (1.00%)
+          n0: 262096 in 1 place, below massif's threshold (1.00%)
+       n1: 786432 0x13956C: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 786432 0x12FDF4: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n2: 786432 0x126C0B: parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 524288 0x1324A9: parlay::sequence<unsigned int, parlay::allocator<unsigned int>, false>::sequence(unsigned long, parlay::sequence<unsigned int, parlay::allocator<unsigned int>, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 524288 0x128F3C: parlay::sequence<unsigned int, parlay::allocator<unsigned int>, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n0: 524288 in 2 places, all below massif's threshold (1.00%)
+          n0: 262144 in 1 place, below massif's threshold (1.00%)
+       n1: 524288 0x16D18E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>*, parlay::allocator<std::pair<unsigned int, unsigned int>*>, false>::storage_impl::capacitated_buffer::header::create(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 524288 0x15D29C: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>*, parlay::allocator<std::pair<unsigned int, unsigned int>*>, false>::storage_impl::capacitated_buffer::capacitated_buffer(unsigned long, parlay::allocator<std::byte>&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 524288 0x154211: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>*, parlay::allocator<std::pair<unsigned int, unsigned int>*>, false>::storage_impl::initialize_capacity(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 524288 0x14CB23: parlay::sequence<std::pair<unsigned int, unsigned int>*, parlay::allocator<std::pair<unsigned int, unsigned int>*>, false>::sequence(unsigned long, parlay::sequence<std::pair<unsigned int, unsigned int>*, parlay::allocator<std::pair<unsigned int, unsigned int>*>, false>::_uninitialized_tag) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 524288 0x14612F: parlay::sequence<std::pair<unsigned int, unsigned int>*, parlay::allocator<std::pair<unsigned int, unsigned int>*>, false>::uninitialized(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n0: 524288 in 2 places, all below massif's threshold (1.00%)
+ n1: 460544 0x11F654: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::initialize() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+  n1: 460544 0x11B208: parlay::ThreadSpecific<parlay::internal::block_allocator::local_list>::ThreadSpecific() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+   n1: 460544 0x116BC7: parlay::internal::block_allocator::block_allocator(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+    n2: 460544 0x1174DE: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}::operator()(unsigned long) const (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n1: 427648 0x1175E3: auto parlay::make_unique_array<parlay::internal::block_allocator, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}>(unsigned long, parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&)::{lambda(unsigned long)#1}) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+      n1: 427648 0x1178D8: parlay::internal::pool_allocator::pool_allocator(std::vector<unsigned long, std::allocator<unsigned long> > const&) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+       n1: 427648 0x117E2C: parlay::internal::get_default_allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+        n1: 427648 0x130600: parlay::allocator<std::pair<unsigned int, unsigned int> >::allocator() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+         n1: 427648 0x1277E1: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::storage_impl::storage_impl() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+          n1: 427648 0x12123E: parlay::sequence_internal::sequence_base<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence_base() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+           n1: 427648 0x11CF7C: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, false>::sequence(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+            n1: 427648 0x12A2A1: parlay::sequence<std::pair<unsigned int, unsigned int>, parlay::allocator<std::pair<unsigned int, unsigned int> >, std::is_same<std::pair<unsigned int, unsigned int>, char>::value> uniform_pairs_generator<unsigned int>(unsigned long) (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+             n1: 427648 0x1238EB: void run_rep_dist<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+              n1: 427648 0x11DF7B: void run_all_sizes<unsigned int>() (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+               n0: 427648 0x113A2C: main (in /home/elizabeth/sepa-reu-2025/benchmarking/build/benchmark)
+     n0: 32896 in 1 place, below massif's threshold (1.00%)
+ n0: 218344 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=67
+#-----------
+time=122125353972
+mem_heap_B=40766392
+mem_heap_extra_B=7544
+mem_stacks_B=164296
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=123204708550
+mem_heap_B=40766392
+mem_heap_extra_B=7544
+mem_stacks_B=163840
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=124284063130
+mem_heap_B=40766440
+mem_heap_extra_B=7576
+mem_stacks_B=160984
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=125363417712
+mem_heap_B=40766440
+mem_heap_extra_B=7576
+mem_stacks_B=164328
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=126442772292
+mem_heap_B=40766440
+mem_heap_extra_B=7576
+mem_stacks_B=164608
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=127522126869
+mem_heap_B=40775160
+mem_heap_extra_B=7648
+mem_stacks_B=155064
+heap_tree=empty
