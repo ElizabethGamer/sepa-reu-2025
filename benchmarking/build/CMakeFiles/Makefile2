@@ -64,15 +64,32 @@ CMAKE_BINARY_DIR = /home/elizabeth/sepa-reu-2025/benchmarking/build
 
 # The main recursive "all" target.
 all: CMakeFiles/benchmark.dir/all
+all: external/ips4o/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: external/ips4o/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/benchmark.dir/clean
+clean: external/ips4o/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory external/ips4o
+
+# Recursive "all" directory target.
+external/ips4o/all: external/ips4o/CMakeFiles/ips4o_example.dir/all
+.PHONY : external/ips4o/all
+
+# Recursive "preinstall" directory target.
+external/ips4o/preinstall:
+.PHONY : external/ips4o/preinstall
+
+# Recursive "clean" directory target.
+external/ips4o/clean: external/ips4o/CMakeFiles/ips4o_example.dir/clean
+.PHONY : external/ips4o/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/benchmark.dir
@@ -99,6 +116,32 @@ benchmark: CMakeFiles/benchmark.dir/rule
 CMakeFiles/benchmark.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark.dir/build.make CMakeFiles/benchmark.dir/clean
 .PHONY : CMakeFiles/benchmark.dir/clean
+
+#=============================================================================
+# Target rules for target external/ips4o/CMakeFiles/ips4o_example.dir
+
+# All Build rule for target.
+external/ips4o/CMakeFiles/ips4o_example.dir/all:
+	$(MAKE) $(MAKESILENT) -f external/ips4o/CMakeFiles/ips4o_example.dir/build.make external/ips4o/CMakeFiles/ips4o_example.dir/depend
+	$(MAKE) $(MAKESILENT) -f external/ips4o/CMakeFiles/ips4o_example.dir/build.make external/ips4o/CMakeFiles/ips4o_example.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles --progress-num=3,4 "Built target ips4o_example"
+.PHONY : external/ips4o/CMakeFiles/ips4o_example.dir/all
+
+# Build rule for subdir invocation for target.
+external/ips4o/CMakeFiles/ips4o_example.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/ips4o/CMakeFiles/ips4o_example.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles 0
+.PHONY : external/ips4o/CMakeFiles/ips4o_example.dir/rule
+
+# Convenience name for target.
+ips4o_example: external/ips4o/CMakeFiles/ips4o_example.dir/rule
+.PHONY : ips4o_example
+
+# clean rule for target.
+external/ips4o/CMakeFiles/ips4o_example.dir/clean:
+	$(MAKE) $(MAKESILENT) -f external/ips4o/CMakeFiles/ips4o_example.dir/build.make external/ips4o/CMakeFiles/ips4o_example.dir/clean
+.PHONY : external/ips4o/CMakeFiles/ips4o_example.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

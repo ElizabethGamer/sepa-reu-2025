@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/elizabeth/sepa-reu-2025/benchmarking/include
+CXX_INCLUDES = -I/home/elizabeth/sepa-reu-2025/benchmarking/include -I/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include
 
 CXX_FLAGS = -std=gnu++17
 

@@ -129,6 +129,19 @@ benchmark/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark.dir/build.make CMakeFiles/benchmark.dir/build
 .PHONY : benchmark/fast
 
+#=============================================================================
+# Target rules for targets named ips4o_example
+
+# Build rule for target.
+ips4o_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ips4o_example
+.PHONY : ips4o_example
+
+# fast build rule for target.
+ips4o_example/fast:
+	$(MAKE) $(MAKESILENT) -f external/ips4o/CMakeFiles/ips4o_example.dir/build.make external/ips4o/CMakeFiles/ips4o_example.dir/build
+.PHONY : ips4o_example/fast
+
 src/benchmark.o: src/benchmark.cpp.o
 .PHONY : src/benchmark.o
 
@@ -162,6 +175,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... benchmark"
+	@echo "... ips4o_example"
 	@echo "... src/benchmark.o"
 	@echo "... src/benchmark.i"
 	@echo "... src/benchmark.s"

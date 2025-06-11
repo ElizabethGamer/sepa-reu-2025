@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/elizabeth/sepa-reu-2025/benchmarking/build/external/ips4o",
+  "command": "/usr/bin/c++  -I/home/elizabeth/sepa-reu-2025/benchmarking/include -I/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include  -march=native -std=gnu++14 -o CMakeFiles/ips4o_example.dir/src/example.cpp.o -c /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/src/example.cpp",
+  "file": "/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/src/example.cpp"
+}
+]

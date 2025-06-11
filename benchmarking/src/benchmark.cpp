@@ -7,6 +7,8 @@
 #include <parlay/generator.h>
 #include "parlay/random.h"
 
+#include <ips4o.hpp>
+
 using namespace std;
 using namespace parlay;
 using std::pair;
@@ -16,12 +18,12 @@ size_t n = 1e9;
 
 template<typename T, typename GetKey>
 double test(const sequence<T> &in, const GetKey &g) {
-  std::cout << "test_name: cpp11 sort" << std::endl;
+  std::cout << "test_name: ips4o" << std::endl;
   double total_time = 0;
   for (int i = 0; i <= NUM_ROUNDS; i++) {
     auto seq = in;
     internal::timer t;
-    parlay::integer_sort_inplace(seq, g);
+    ips4o::sort(seq.begin(), seq.end());
     t.stop();
 
     if (i == 0) {

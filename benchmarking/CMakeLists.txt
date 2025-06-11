@@ -15,3 +15,7 @@ add_executable(benchmark ${SOURCES})
 
 # Include Parlay
 find_package(Parlay REQUIRED)
+
+# IPS4o
+add_subdirectory("external/ips4o/")
+target_link_libraries(benchmark PRIVATE ips4o)
