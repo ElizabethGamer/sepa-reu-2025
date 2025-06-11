@@ -1,3 +1,6 @@
 /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/benchmark.dir
 /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/edit_cache.dir
 /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/rebuild_cache.dir
+/home/elizabeth/sepa-reu-2025/benchmarking/build/external/ips4o/CMakeFiles/ips4o_example.dir
+/home/elizabeth/sepa-reu-2025/benchmarking/build/external/ips4o/CMakeFiles/edit_cache.dir
+/home/elizabeth/sepa-reu-2025/benchmarking/build/external/ips4o/CMakeFiles/rebuild_cache.dir

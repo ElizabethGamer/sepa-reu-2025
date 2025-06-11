@@ -1,0 +1,1 @@
+/usr/bin/c++  -march=native CMakeFiles/ips4o_example.dir/src/example.cpp.o -o ips4o_example  /usr/lib/x86_64-linux-gnu/libtbb.so.12.5 -latomic 

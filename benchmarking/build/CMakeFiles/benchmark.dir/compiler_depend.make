@@ -481,8 +481,288 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
   /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/local/include/parlay/random.h
+  /usr/local/include/parlay/random.h \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/ips4o.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/ips4o_fwd.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/config.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/utils.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/scheduler.hpp \
+  /usr/include/tbb/concurrent_queue.h \
+  /usr/include/oneapi/tbb/concurrent_queue.h \
+  /usr/include/oneapi/tbb/detail/_namespace_injection.h \
+  /usr/include/oneapi/tbb/detail/_concurrent_queue_base.h \
+  /usr/include/oneapi/tbb/detail/_utils.h \
+  /usr/include/oneapi/tbb/detail/_config.h \
+  /usr/include/oneapi/tbb/detail/_export.h \
+  /usr/include/oneapi/tbb/detail/_assert.h \
+  /usr/include/oneapi/tbb/detail/_machine.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/bmiintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/cetintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/popcntintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/rtmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/serializeintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/sgxintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/tbmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/waitpkgintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/wbnoinvdintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavecintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+  /usr/include/c++/11/stdlib.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/wmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avxintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx2intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512erintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512pfintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512cdintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512dqintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlbwintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vldqintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmavlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmiintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124vnniwintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2vlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnnivlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bitalgintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectvlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/fmaintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/f16cintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/gfniintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/vaesintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16vlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxint8intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h \
+  /usr/include/oneapi/tbb/detail/_exception.h \
+  /usr/include/oneapi/tbb/detail/_allocator_traits.h \
+  /usr/include/oneapi/tbb/detail/_template_helpers.h \
+  /usr/include/oneapi/tbb/profiling.h \
+  /usr/include/oneapi/tbb/detail/_config.h \
+  /usr/include/oneapi/tbb/detail/_string_resource.h \
+  /usr/include/oneapi/tbb/spin_mutex.h \
+  /usr/include/oneapi/tbb/detail/_mutex_common.h \
+  /usr/include/oneapi/tbb/profiling.h \
+  /usr/include/oneapi/tbb/detail/_assert.h \
+  /usr/include/oneapi/tbb/detail/_utils.h \
+  /usr/include/oneapi/tbb/detail/_scoped_lock.h \
+  /usr/include/oneapi/tbb/detail/_rtm_mutex.h \
+  /usr/include/oneapi/tbb/cache_aligned_allocator.h \
+  /usr/include/c++/11/memory_resource \
+  /usr/include/c++/11/shared_mutex \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
+  /usr/include/oneapi/tbb/detail/_allocator_traits.h \
+  /usr/include/oneapi/tbb/detail/_exception.h \
+  /usr/include/oneapi/tbb/detail/_containers_helpers.h \
+  /usr/include/oneapi/tbb/cache_aligned_allocator.h \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/task.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/base_case.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/memory.hpp \
+  /usr/include/c++/11/condition_variable \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/bucket_pointers.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/buffers.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/classifier.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/parallel.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/sequential.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/partitioning.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/block_permutation.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/cleanup_margins.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/local_classification.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/empty_block_movement.hpp \
+  /home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/sampling.hpp
 
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/sampling.hpp:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/empty_block_movement.hpp:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/local_classification.hpp:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/cleanup_margins.hpp:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/block_permutation.hpp:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/partitioning.hpp:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/buffers.hpp:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/bucket_pointers.hpp:
+
+/usr/include/c++/11/condition_variable:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/base_case.hpp:
+
+/usr/include/oneapi/tbb/detail/_containers_helpers.h:
+
+/usr/include/c++/11/memory_resource:
+
+/usr/include/oneapi/tbb/cache_aligned_allocator.h:
+
+/usr/include/oneapi/tbb/detail/_rtm_mutex.h:
+
+/usr/include/oneapi/tbb/spin_mutex.h:
+
+/usr/include/oneapi/tbb/profiling.h:
+
+/usr/include/oneapi/tbb/detail/_template_helpers.h:
+
+/usr/include/oneapi/tbb/detail/_exception.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/gfniintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/f16cintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bitalgintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2vlintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2intrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16vlintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlbwintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512dqintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512cdintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512pfintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx2intrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/wmmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
+
+/usr/include/c++/11/stdlib.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16intrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512erintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsavecintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/waitpkgintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/rtmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/popcntintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/cetintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:
+
+/usr/include/oneapi/tbb/detail/_concurrent_queue_base.h:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/scheduler.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vldqintrin.h:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/config.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/ips4o_fwd.hpp:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/ips4o.hpp:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
 
@@ -506,6 +786,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/local/include/parlay/internal/delayed/terminal.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h:
+
 /usr/local/include/parlay/internal/delayed/map.h:
 
 /usr/local/include/parlay/internal/delayed/common.h:
@@ -514,7 +796,11 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/local/include/parlay/internal/transpose.h:
 
+/usr/include/oneapi/tbb/concurrent_queue.h:
+
 /usr/local/include/parlay/internal/uninitialized_storage.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h:
 
 /usr/local/include/parlay/internal/delayed/zip.h:
 
@@ -531,6 +817,10 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/assert.h:
+
+/usr/include/c++/11/bits/uses_allocator_args.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmiintrin.h:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
@@ -553,6 +843,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/c++/11/bits/streambuf.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/classifier.hpp:
 
 /usr/include/ctype.h:
 
@@ -588,6 +880,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h:
+
 /usr/include/c++/11/cstdio:
 
 /usr/include/c++/11/bits/stream_iterator.h:
@@ -601,6 +895,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avxintrin.h:
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
 
@@ -622,13 +918,19 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/bits/alloc_traits.h:
 
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/sequential.hpp:
+
 /usr/include/c++/11/ext/alloc_traits.h:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/utils.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/local/include/parlay/internal/pool_allocator.h:
 
 /usr/include/c++/11/bits/basic_string.h:
+
+/usr/include/oneapi/tbb/detail/_utils.h:
 
 /usr/include/c++/11/initializer_list:
 
@@ -637,6 +939,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
@@ -650,6 +954,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/string:
 
+/usr/include/oneapi/tbb/detail/_export.h:
+
 /usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/c++/11/bits/shared_ptr.h:
@@ -657,6 +963,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h:
 
 /usr/include/c++/11/bits/functional_hash.h:
 
@@ -684,6 +992,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h:
+
 /usr/include/c++/11/cassert:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
@@ -692,7 +1002,11 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/bits/exception_defines.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmavlintrin.h:
+
 /usr/include/c++/11/bits/stl_relops.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:
 
 /usr/include/c++/11/backward/binders.h:
 
@@ -732,6 +1046,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/bits/ostream_insert.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h:
+
 /usr/include/unistd.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
@@ -739,6 +1055,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/c++/11/iterator:
 
 /usr/include/c++/11/bits/stl_function.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h:
 
 /usr/include/c++/11/ext/atomicity.h:
 
@@ -749,6 +1067,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/c++/11/memory:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnnivlintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
@@ -763,6 +1083,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/math.h:
 
 /usr/include/string.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
 
@@ -780,6 +1102,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/bits/node_handle.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/bmiintrin.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
@@ -788,7 +1112,11 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/iosfwd:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/sgxintrin.h:
+
 /usr/include/c++/11/ext/concurrence.h:
+
+/usr/include/oneapi/tbb/detail/_mutex_common.h:
 
 /usr/include/c++/11/bits/unique_lock.h:
 
@@ -813,6 +1141,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/c++/11/bits/stringfwd.h:
 
 /usr/include/c++/11/bits/hash_bytes.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h:
 
 /usr/include/features.h:
 
@@ -864,7 +1194,11 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/locale.h:
 
+/usr/include/oneapi/tbb/detail/_scoped_lock.h:
+
 /usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/oneapi/tbb/detail/_namespace_injection.h:
 
 /usr/include/c++/11/ostream:
 
@@ -878,6 +1212,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/thread:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/serializeintrin.h:
+
 /usr/include/c++/11/bits/fstream.tcc:
 
 /usr/local/include/parlay/relocation.h:
@@ -888,6 +1224,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/bits/std_abs.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/wbnoinvdintrin.h:
+
 /home/elizabeth/sepa-reu-2025/benchmarking/src/benchmark.cpp:
 
 /usr/include/c++/11/bits/hashtable.h:
@@ -897,6 +1235,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
 
 /usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/oneapi/tbb/detail/_string_resource.h:
 
 /usr/include/c++/11/bits/stl_list.h:
 
@@ -940,6 +1280,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/sched.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h:
+
 /usr/include/c++/11/bits/align.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
@@ -958,7 +1300,11 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/bits/ostream.tcc:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h:
+
 /usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxint8intrin.h:
 
 /usr/include/c++/11/bits/deque.tcc:
 
@@ -971,6 +1317,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/c++/11/bits/stl_iterator.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveintrin.h:
 
 /usr/local/include/parlay/internal/collect_reduce.h:
 
@@ -1000,6 +1348,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/array:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/fmaintrin.h:
+
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
@@ -1022,6 +1372,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/pthread.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
@@ -1029,6 +1381,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/c++/11/bits/this_thread_sleep.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
@@ -1058,6 +1412,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/bits/std_function.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h:
+
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/local/include/parlay/monoid.h:
@@ -1067,6 +1423,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/linux/close_range.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/tbmintrin.h:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
 
@@ -1102,6 +1460,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/local/include/parlay/slice.h:
 
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/memory.hpp:
+
 /usr/include/c++/11/random:
 
 /usr/include/c++/11/bits/stl_queue.h:
@@ -1122,9 +1482,15 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/tr1/hypergeometric.tcc:
 
+/usr/include/oneapi/tbb/detail/_allocator_traits.h:
+
+/usr/include/oneapi/tbb/detail/_assert.h:
+
 /usr/include/c++/11/tr1/legendre_function.tcc:
 
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
@@ -1142,11 +1508,15 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/backward/auto_ptr.h:
 
+/usr/include/tbb/concurrent_queue.h:
+
 /usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/include/limits.h:
 
 /usr/include/c++/11/bit:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/parallel.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
@@ -1168,6 +1538,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/local/include/parlay/utilities.h:
 
+/usr/include/c++/11/shared_mutex:
+
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/c++/11/list:
@@ -1182,11 +1554,15 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/local/include/parlay/type_traits.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124vnniwintrin.h:
+
 /usr/include/endian.h:
 
 /usr/include/c++/11/deque:
 
 /usr/include/linux/stddef.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -1203,6 +1579,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/c++/11/stdexcept:
 
 /usr/include/c++/11/bits/stl_map.h:
+
+/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o/include/ips4o/task.hpp:
 
 /usr/include/c++/11/bits/stl_multiset.h:
 
@@ -1224,11 +1602,15 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/c++/11/ratio:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h:
+
 /usr/include/c++/11/bits/istream.tcc:
 
 /usr/include/c++/11/pstl/pstl_config.h:
 
 /usr/include/c++/11/ctime:
+
+/usr/include/oneapi/tbb/detail/_config.h:
 
 /usr/local/include/parlay/internal/work_stealing_job.h:
 
@@ -1248,7 +1630,11 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h:
+
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
@@ -1290,13 +1676,19 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 
 /usr/local/include/parlay/range.h:
 
+/usr/include/oneapi/tbb/detail/_machine.h:
+
 /usr/local/include/parlay/internal/concurrency/hazptr_stack.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectvlintrin.h:
 
 /usr/local/include/parlay/alloc.h:
 
 /usr/local/include/parlay/internal/block_allocator.h:
 
 /usr/include/c++/11/mutex:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
 
 /usr/local/include/parlay/internal/thread_id_pool.h:
 
@@ -1315,6 +1707,8 @@ CMakeFiles/benchmark.dir/src/benchmark.cpp.o: /home/elizabeth/sepa-reu-2025/benc
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/vaesintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 

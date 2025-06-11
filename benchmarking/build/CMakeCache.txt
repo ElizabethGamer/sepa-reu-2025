@@ -212,8 +212,24 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Disable parallel code of IPS4o
+IPS4O_DISABLE_PARALLEL:BOOL=OFF
+
+//Build with -march=native
+IPS4O_OPTIMIZE_FOR_NATIVE:BOOL=ON
+
+//Enable 128-bit atomic instructions explicitly with the compile
+// option -mcx16 (only required if not optimized for native)
+IPS4O_USE_MCX16:BOOL=OFF
+
+//Enable OpenMP threads
+IPS4O_USE_OPENMP:BOOL=OFF
+
 //The directory containing a CMake configuration file for Parlay.
 Parlay_DIR:PATH=/usr/local/share/parlay/cmake
+
+//The directory containing a CMake configuration file for TBB.
+TBB_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/TBB
 
 //Value Computed by CMake
 beginnerparlay_BINARY_DIR:STATIC=/home/elizabeth/sepa-reu-2025/benchmarking/build
@@ -223,6 +239,15 @@ beginnerparlay_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 beginnerparlay_SOURCE_DIR:STATIC=/home/elizabeth/sepa-reu-2025/benchmarking
+
+//Value Computed by CMake
+ips4o_BINARY_DIR:STATIC=/home/elizabeth/sepa-reu-2025/benchmarking/build/external/ips4o
+
+//Value Computed by CMake
+ips4o_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ips4o_SOURCE_DIR:STATIC=/home/elizabeth/sepa-reu-2025/benchmarking/external/ips4o
 
 
 ########################
@@ -333,7 +358,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -376,6 +401,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Test COMPILER_SUPPORTS_MARCH_NATIVE
+COMPILER_SUPPORTS_MARCH_NATIVE:INTERNAL=1
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //linker supports push/pop state

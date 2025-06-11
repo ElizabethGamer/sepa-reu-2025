@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/benchmark.dir/src/benchmark.cpp.o -o benchmark 
+/usr/bin/c++ CMakeFiles/benchmark.dir/src/benchmark.cpp.o -o benchmark  /usr/lib/x86_64-linux-gnu/libtbb.so.12.5 -latomic 
