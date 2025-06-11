@@ -19,3 +19,6 @@ find_package(Parlay REQUIRED)
 # IPS4o
 add_subdirectory("external/ips4o/")
 target_link_libraries(benchmark PRIVATE ips4o)
+
+# CPP11
+target_include_directories(benchmark PRIVATE "external/cpp11sort/include")

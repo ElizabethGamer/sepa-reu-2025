@@ -8,6 +8,7 @@
 #include "parlay/random.h"
 
 #include <ips4o.hpp>
+#include <cpp11sort.h>
 
 using namespace std;
 using namespace parlay;
@@ -18,12 +19,12 @@ size_t n = 1e9;
 
 template<typename T, typename GetKey>
 double test(const sequence<T> &in, const GetKey &g) {
-  std::cout << "test_name: ips4o" << std::endl;
+  std::cout << "test_name: cpp11" << std::endl;
   double total_time = 0;
   for (int i = 0; i <= NUM_ROUNDS; i++) {
     auto seq = in;
     internal::timer t;
-    ips4o::sort(seq.begin(), seq.end());
+    cpp11sort::sort(seq.begin(), seq.end());
     t.stop();
 
     if (i == 0) {
@@ -81,7 +82,7 @@ void run_rep_dist() {
 
 template<class T>
 void run_all_sizes() {
-  vector<size_t> sizes{1'000'000, 10'000'000, 100'000'000, 1'000'000'000, 2'000'000'000, 4'000'000'000};
+  vector<size_t> sizes{2'000'000'000, 4'000'000'000}; //1'000'000, 10'000'000, 100'000'000, 1'000'000'000,
   for (auto input_size : sizes) {
     n = input_size;
     printf("size: %ld\n", n);
