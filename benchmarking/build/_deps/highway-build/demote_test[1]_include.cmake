@@ -1,0 +1,5 @@
+if(EXISTS "/home/elizabeth/sepa-reu-2025/benchmarking/build/_deps/highway-build/demote_test[1]_tests.cmake")
+  include("/home/elizabeth/sepa-reu-2025/benchmarking/build/_deps/highway-build/demote_test[1]_tests.cmake")
+else()
+  add_test(demote_test_NOT_BUILT demote_test_NOT_BUILT)
+endif()

@@ -10,6 +10,12 @@
 #include <ips4o.hpp>
 #include <cpp11sort.h>
 
+#include "hwy/contrib/sort/vqsort-inl.h"
+#include "hwy/contrib/sort/vqsort.h"
+#include "hwy/highway.h"
+
+namespace hn = hwy::HWY_NAMESPACE;
+
 using namespace std;
 using namespace parlay;
 using std::pair;

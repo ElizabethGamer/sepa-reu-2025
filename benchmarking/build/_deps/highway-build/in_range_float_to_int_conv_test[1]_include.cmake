@@ -1,0 +1,5 @@
+if(EXISTS "/home/elizabeth/sepa-reu-2025/benchmarking/build/_deps/highway-build/in_range_float_to_int_conv_test[1]_tests.cmake")
+  include("/home/elizabeth/sepa-reu-2025/benchmarking/build/_deps/highway-build/in_range_float_to_int_conv_test[1]_tests.cmake")
+else()
+  add_test(in_range_float_to_int_conv_test_NOT_BUILT in_range_float_to_int_conv_test_NOT_BUILT)
+endif()

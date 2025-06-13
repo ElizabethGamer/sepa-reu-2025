@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/opt/cmake-3.25.1/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/opt/cmake-3.25.1/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/opt/cmake-3.25.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/opt/cmake-3.25.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/opt/cmake-3.25.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/opt/cmake-3.25.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles /home/elizabeth/sepa-reu-2025/benchmarking/build//CMakeFiles/progress.marks
@@ -142,6 +187,1592 @@ ips4o_example/fast:
 	$(MAKE) $(MAKESILENT) -f external/ips4o/CMakeFiles/ips4o_example.dir/build.make external/ips4o/CMakeFiles/ips4o_example.dir/build
 .PHONY : ips4o_example/fast
 
+#=============================================================================
+# Target rules for targets named hwy
+
+# Build rule for target.
+hwy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hwy
+.PHONY : hwy
+
+# fast build rule for target.
+hwy/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/hwy.dir/build.make _deps/highway-build/CMakeFiles/hwy.dir/build
+.PHONY : hwy/fast
+
+#=============================================================================
+# Target rules for targets named hwy_contrib
+
+# Build rule for target.
+hwy_contrib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hwy_contrib
+.PHONY : hwy_contrib
+
+# fast build rule for target.
+hwy_contrib/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/hwy_contrib.dir/build.make _deps/highway-build/CMakeFiles/hwy_contrib.dir/build
+.PHONY : hwy_contrib/fast
+
+#=============================================================================
+# Target rules for targets named hwy_test
+
+# Build rule for target.
+hwy_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hwy_test
+.PHONY : hwy_test
+
+# fast build rule for target.
+hwy_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/hwy_test.dir/build.make _deps/highway-build/CMakeFiles/hwy_test.dir/build
+.PHONY : hwy_test/fast
+
+#=============================================================================
+# Target rules for targets named hwy_list_targets
+
+# Build rule for target.
+hwy_list_targets: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hwy_list_targets
+.PHONY : hwy_list_targets
+
+# fast build rule for target.
+hwy_list_targets/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/hwy_list_targets.dir/build.make _deps/highway-build/CMakeFiles/hwy_list_targets.dir/build
+.PHONY : hwy_list_targets/fast
+
+#=============================================================================
+# Target rules for targets named hwy_benchmark
+
+# Build rule for target.
+hwy_benchmark: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hwy_benchmark
+.PHONY : hwy_benchmark
+
+# fast build rule for target.
+hwy_benchmark/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/hwy_benchmark.dir/build.make _deps/highway-build/CMakeFiles/hwy_benchmark.dir/build
+.PHONY : hwy_benchmark/fast
+
+#=============================================================================
+# Target rules for targets named hwy_profiler_example
+
+# Build rule for target.
+hwy_profiler_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hwy_profiler_example
+.PHONY : hwy_profiler_example
+
+# fast build rule for target.
+hwy_profiler_example/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/hwy_profiler_example.dir/build.make _deps/highway-build/CMakeFiles/hwy_profiler_example.dir/build
+.PHONY : hwy_profiler_example/fast
+
+#=============================================================================
+# Target rules for targets named Experimental
+
+# Build rule for target.
+Experimental: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Experimental
+.PHONY : Experimental
+
+# fast build rule for target.
+Experimental/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/Experimental.dir/build.make _deps/highway-build/CMakeFiles/Experimental.dir/build
+.PHONY : Experimental/fast
+
+#=============================================================================
+# Target rules for targets named Nightly
+
+# Build rule for target.
+Nightly: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nightly
+.PHONY : Nightly
+
+# fast build rule for target.
+Nightly/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/Nightly.dir/build.make _deps/highway-build/CMakeFiles/Nightly.dir/build
+.PHONY : Nightly/fast
+
+#=============================================================================
+# Target rules for targets named Continuous
+
+# Build rule for target.
+Continuous: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Continuous
+.PHONY : Continuous
+
+# fast build rule for target.
+Continuous/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/Continuous.dir/build.make _deps/highway-build/CMakeFiles/Continuous.dir/build
+.PHONY : Continuous/fast
+
+#=============================================================================
+# Target rules for targets named NightlyMemoryCheck
+
+# Build rule for target.
+NightlyMemoryCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemoryCheck
+.PHONY : NightlyMemoryCheck
+
+# fast build rule for target.
+NightlyMemoryCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/NightlyMemoryCheck.dir/build.make _deps/highway-build/CMakeFiles/NightlyMemoryCheck.dir/build
+.PHONY : NightlyMemoryCheck/fast
+
+#=============================================================================
+# Target rules for targets named NightlyStart
+
+# Build rule for target.
+NightlyStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyStart
+.PHONY : NightlyStart
+
+# fast build rule for target.
+NightlyStart/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/NightlyStart.dir/build.make _deps/highway-build/CMakeFiles/NightlyStart.dir/build
+.PHONY : NightlyStart/fast
+
+#=============================================================================
+# Target rules for targets named NightlyUpdate
+
+# Build rule for target.
+NightlyUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyUpdate
+.PHONY : NightlyUpdate
+
+# fast build rule for target.
+NightlyUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/NightlyUpdate.dir/build.make _deps/highway-build/CMakeFiles/NightlyUpdate.dir/build
+.PHONY : NightlyUpdate/fast
+
+#=============================================================================
+# Target rules for targets named NightlyConfigure
+
+# Build rule for target.
+NightlyConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyConfigure
+.PHONY : NightlyConfigure
+
+# fast build rule for target.
+NightlyConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/NightlyConfigure.dir/build.make _deps/highway-build/CMakeFiles/NightlyConfigure.dir/build
+.PHONY : NightlyConfigure/fast
+
+#=============================================================================
+# Target rules for targets named NightlyBuild
+
+# Build rule for target.
+NightlyBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyBuild
+.PHONY : NightlyBuild
+
+# fast build rule for target.
+NightlyBuild/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/NightlyBuild.dir/build.make _deps/highway-build/CMakeFiles/NightlyBuild.dir/build
+.PHONY : NightlyBuild/fast
+
+#=============================================================================
+# Target rules for targets named NightlyTest
+
+# Build rule for target.
+NightlyTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyTest
+.PHONY : NightlyTest
+
+# fast build rule for target.
+NightlyTest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/NightlyTest.dir/build.make _deps/highway-build/CMakeFiles/NightlyTest.dir/build
+.PHONY : NightlyTest/fast
+
+#=============================================================================
+# Target rules for targets named NightlyCoverage
+
+# Build rule for target.
+NightlyCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyCoverage
+.PHONY : NightlyCoverage
+
+# fast build rule for target.
+NightlyCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/NightlyCoverage.dir/build.make _deps/highway-build/CMakeFiles/NightlyCoverage.dir/build
+.PHONY : NightlyCoverage/fast
+
+#=============================================================================
+# Target rules for targets named NightlyMemCheck
+
+# Build rule for target.
+NightlyMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemCheck
+.PHONY : NightlyMemCheck
+
+# fast build rule for target.
+NightlyMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/NightlyMemCheck.dir/build.make _deps/highway-build/CMakeFiles/NightlyMemCheck.dir/build
+.PHONY : NightlyMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named NightlySubmit
+
+# Build rule for target.
+NightlySubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlySubmit
+.PHONY : NightlySubmit
+
+# fast build rule for target.
+NightlySubmit/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/NightlySubmit.dir/build.make _deps/highway-build/CMakeFiles/NightlySubmit.dir/build
+.PHONY : NightlySubmit/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalStart
+
+# Build rule for target.
+ExperimentalStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalStart
+.PHONY : ExperimentalStart
+
+# fast build rule for target.
+ExperimentalStart/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ExperimentalStart.dir/build.make _deps/highway-build/CMakeFiles/ExperimentalStart.dir/build
+.PHONY : ExperimentalStart/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalUpdate
+
+# Build rule for target.
+ExperimentalUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalUpdate
+.PHONY : ExperimentalUpdate
+
+# fast build rule for target.
+ExperimentalUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ExperimentalUpdate.dir/build.make _deps/highway-build/CMakeFiles/ExperimentalUpdate.dir/build
+.PHONY : ExperimentalUpdate/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalConfigure
+
+# Build rule for target.
+ExperimentalConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalConfigure
+.PHONY : ExperimentalConfigure
+
+# fast build rule for target.
+ExperimentalConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ExperimentalConfigure.dir/build.make _deps/highway-build/CMakeFiles/ExperimentalConfigure.dir/build
+.PHONY : ExperimentalConfigure/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalBuild
+
+# Build rule for target.
+ExperimentalBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalBuild
+.PHONY : ExperimentalBuild
+
+# fast build rule for target.
+ExperimentalBuild/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ExperimentalBuild.dir/build.make _deps/highway-build/CMakeFiles/ExperimentalBuild.dir/build
+.PHONY : ExperimentalBuild/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalTest
+
+# Build rule for target.
+ExperimentalTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalTest
+.PHONY : ExperimentalTest
+
+# fast build rule for target.
+ExperimentalTest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ExperimentalTest.dir/build.make _deps/highway-build/CMakeFiles/ExperimentalTest.dir/build
+.PHONY : ExperimentalTest/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalCoverage
+
+# Build rule for target.
+ExperimentalCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalCoverage
+.PHONY : ExperimentalCoverage
+
+# fast build rule for target.
+ExperimentalCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ExperimentalCoverage.dir/build.make _deps/highway-build/CMakeFiles/ExperimentalCoverage.dir/build
+.PHONY : ExperimentalCoverage/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalMemCheck
+
+# Build rule for target.
+ExperimentalMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalMemCheck
+.PHONY : ExperimentalMemCheck
+
+# fast build rule for target.
+ExperimentalMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ExperimentalMemCheck.dir/build.make _deps/highway-build/CMakeFiles/ExperimentalMemCheck.dir/build
+.PHONY : ExperimentalMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalSubmit
+
+# Build rule for target.
+ExperimentalSubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalSubmit
+.PHONY : ExperimentalSubmit
+
+# fast build rule for target.
+ExperimentalSubmit/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ExperimentalSubmit.dir/build.make _deps/highway-build/CMakeFiles/ExperimentalSubmit.dir/build
+.PHONY : ExperimentalSubmit/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousStart
+
+# Build rule for target.
+ContinuousStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousStart
+.PHONY : ContinuousStart
+
+# fast build rule for target.
+ContinuousStart/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ContinuousStart.dir/build.make _deps/highway-build/CMakeFiles/ContinuousStart.dir/build
+.PHONY : ContinuousStart/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousUpdate
+
+# Build rule for target.
+ContinuousUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousUpdate
+.PHONY : ContinuousUpdate
+
+# fast build rule for target.
+ContinuousUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ContinuousUpdate.dir/build.make _deps/highway-build/CMakeFiles/ContinuousUpdate.dir/build
+.PHONY : ContinuousUpdate/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousConfigure
+
+# Build rule for target.
+ContinuousConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousConfigure
+.PHONY : ContinuousConfigure
+
+# fast build rule for target.
+ContinuousConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ContinuousConfigure.dir/build.make _deps/highway-build/CMakeFiles/ContinuousConfigure.dir/build
+.PHONY : ContinuousConfigure/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousBuild
+
+# Build rule for target.
+ContinuousBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousBuild
+.PHONY : ContinuousBuild
+
+# fast build rule for target.
+ContinuousBuild/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ContinuousBuild.dir/build.make _deps/highway-build/CMakeFiles/ContinuousBuild.dir/build
+.PHONY : ContinuousBuild/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousTest
+
+# Build rule for target.
+ContinuousTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousTest
+.PHONY : ContinuousTest
+
+# fast build rule for target.
+ContinuousTest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ContinuousTest.dir/build.make _deps/highway-build/CMakeFiles/ContinuousTest.dir/build
+.PHONY : ContinuousTest/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousCoverage
+
+# Build rule for target.
+ContinuousCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousCoverage
+.PHONY : ContinuousCoverage
+
+# fast build rule for target.
+ContinuousCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ContinuousCoverage.dir/build.make _deps/highway-build/CMakeFiles/ContinuousCoverage.dir/build
+.PHONY : ContinuousCoverage/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousMemCheck
+
+# Build rule for target.
+ContinuousMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousMemCheck
+.PHONY : ContinuousMemCheck
+
+# fast build rule for target.
+ContinuousMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ContinuousMemCheck.dir/build.make _deps/highway-build/CMakeFiles/ContinuousMemCheck.dir/build
+.PHONY : ContinuousMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousSubmit
+
+# Build rule for target.
+ContinuousSubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousSubmit
+.PHONY : ContinuousSubmit
+
+# fast build rule for target.
+ContinuousSubmit/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/ContinuousSubmit.dir/build.make _deps/highway-build/CMakeFiles/ContinuousSubmit.dir/build
+.PHONY : ContinuousSubmit/fast
+
+#=============================================================================
+# Target rules for targets named abort_test
+
+# Build rule for target.
+abort_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abort_test
+.PHONY : abort_test
+
+# fast build rule for target.
+abort_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/abort_test.dir/build.make _deps/highway-build/CMakeFiles/abort_test.dir/build
+.PHONY : abort_test/fast
+
+#=============================================================================
+# Target rules for targets named aligned_allocator_test
+
+# Build rule for target.
+aligned_allocator_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 aligned_allocator_test
+.PHONY : aligned_allocator_test
+
+# fast build rule for target.
+aligned_allocator_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/aligned_allocator_test.dir/build.make _deps/highway-build/CMakeFiles/aligned_allocator_test.dir/build
+.PHONY : aligned_allocator_test/fast
+
+#=============================================================================
+# Target rules for targets named base_test
+
+# Build rule for target.
+base_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 base_test
+.PHONY : base_test
+
+# fast build rule for target.
+base_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/base_test.dir/build.make _deps/highway-build/CMakeFiles/base_test.dir/build
+.PHONY : base_test/fast
+
+#=============================================================================
+# Target rules for targets named bit_set_test
+
+# Build rule for target.
+bit_set_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bit_set_test
+.PHONY : bit_set_test
+
+# fast build rule for target.
+bit_set_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/bit_set_test.dir/build.make _deps/highway-build/CMakeFiles/bit_set_test.dir/build
+.PHONY : bit_set_test/fast
+
+#=============================================================================
+# Target rules for targets named highway_test
+
+# Build rule for target.
+highway_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 highway_test
+.PHONY : highway_test
+
+# fast build rule for target.
+highway_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/highway_test.dir/build.make _deps/highway-build/CMakeFiles/highway_test.dir/build
+.PHONY : highway_test/fast
+
+#=============================================================================
+# Target rules for targets named nanobenchmark_test
+
+# Build rule for target.
+nanobenchmark_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nanobenchmark_test
+.PHONY : nanobenchmark_test
+
+# fast build rule for target.
+nanobenchmark_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/nanobenchmark_test.dir/build.make _deps/highway-build/CMakeFiles/nanobenchmark_test.dir/build
+.PHONY : nanobenchmark_test/fast
+
+#=============================================================================
+# Target rules for targets named perf_counters_test
+
+# Build rule for target.
+perf_counters_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perf_counters_test
+.PHONY : perf_counters_test
+
+# fast build rule for target.
+perf_counters_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/perf_counters_test.dir/build.make _deps/highway-build/CMakeFiles/perf_counters_test.dir/build
+.PHONY : perf_counters_test/fast
+
+#=============================================================================
+# Target rules for targets named targets_test
+
+# Build rule for target.
+targets_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 targets_test
+.PHONY : targets_test
+
+# fast build rule for target.
+targets_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/targets_test.dir/build.make _deps/highway-build/CMakeFiles/targets_test.dir/build
+.PHONY : targets_test/fast
+
+#=============================================================================
+# Target rules for targets named skeleton_test
+
+# Build rule for target.
+skeleton_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 skeleton_test
+.PHONY : skeleton_test
+
+# fast build rule for target.
+skeleton_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/skeleton_test.dir/build.make _deps/highway-build/CMakeFiles/skeleton_test.dir/build
+.PHONY : skeleton_test/fast
+
+#=============================================================================
+# Target rules for targets named arithmetic_test
+
+# Build rule for target.
+arithmetic_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arithmetic_test
+.PHONY : arithmetic_test
+
+# fast build rule for target.
+arithmetic_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/arithmetic_test.dir/build.make _deps/highway-build/CMakeFiles/arithmetic_test.dir/build
+.PHONY : arithmetic_test/fast
+
+#=============================================================================
+# Target rules for targets named bit_permute_test
+
+# Build rule for target.
+bit_permute_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bit_permute_test
+.PHONY : bit_permute_test
+
+# fast build rule for target.
+bit_permute_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/bit_permute_test.dir/build.make _deps/highway-build/CMakeFiles/bit_permute_test.dir/build
+.PHONY : bit_permute_test/fast
+
+#=============================================================================
+# Target rules for targets named blockwise_combine_test
+
+# Build rule for target.
+blockwise_combine_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blockwise_combine_test
+.PHONY : blockwise_combine_test
+
+# fast build rule for target.
+blockwise_combine_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/blockwise_combine_test.dir/build.make _deps/highway-build/CMakeFiles/blockwise_combine_test.dir/build
+.PHONY : blockwise_combine_test/fast
+
+#=============================================================================
+# Target rules for targets named blockwise_shift_test
+
+# Build rule for target.
+blockwise_shift_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blockwise_shift_test
+.PHONY : blockwise_shift_test
+
+# fast build rule for target.
+blockwise_shift_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/blockwise_shift_test.dir/build.make _deps/highway-build/CMakeFiles/blockwise_shift_test.dir/build
+.PHONY : blockwise_shift_test/fast
+
+#=============================================================================
+# Target rules for targets named blockwise_test
+
+# Build rule for target.
+blockwise_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blockwise_test
+.PHONY : blockwise_test
+
+# fast build rule for target.
+blockwise_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/blockwise_test.dir/build.make _deps/highway-build/CMakeFiles/blockwise_test.dir/build
+.PHONY : blockwise_test/fast
+
+#=============================================================================
+# Target rules for targets named cast_test
+
+# Build rule for target.
+cast_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cast_test
+.PHONY : cast_test
+
+# fast build rule for target.
+cast_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/cast_test.dir/build.make _deps/highway-build/CMakeFiles/cast_test.dir/build
+.PHONY : cast_test/fast
+
+#=============================================================================
+# Target rules for targets named combine_test
+
+# Build rule for target.
+combine_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 combine_test
+.PHONY : combine_test
+
+# fast build rule for target.
+combine_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/combine_test.dir/build.make _deps/highway-build/CMakeFiles/combine_test.dir/build
+.PHONY : combine_test/fast
+
+#=============================================================================
+# Target rules for targets named compare_test
+
+# Build rule for target.
+compare_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 compare_test
+.PHONY : compare_test
+
+# fast build rule for target.
+compare_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/compare_test.dir/build.make _deps/highway-build/CMakeFiles/compare_test.dir/build
+.PHONY : compare_test/fast
+
+#=============================================================================
+# Target rules for targets named complex_arithmetic_test
+
+# Build rule for target.
+complex_arithmetic_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 complex_arithmetic_test
+.PHONY : complex_arithmetic_test
+
+# fast build rule for target.
+complex_arithmetic_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/complex_arithmetic_test.dir/build.make _deps/highway-build/CMakeFiles/complex_arithmetic_test.dir/build
+.PHONY : complex_arithmetic_test/fast
+
+#=============================================================================
+# Target rules for targets named compress_test
+
+# Build rule for target.
+compress_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 compress_test
+.PHONY : compress_test
+
+# fast build rule for target.
+compress_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/compress_test.dir/build.make _deps/highway-build/CMakeFiles/compress_test.dir/build
+.PHONY : compress_test/fast
+
+#=============================================================================
+# Target rules for targets named concat_test
+
+# Build rule for target.
+concat_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 concat_test
+.PHONY : concat_test
+
+# fast build rule for target.
+concat_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/concat_test.dir/build.make _deps/highway-build/CMakeFiles/concat_test.dir/build
+.PHONY : concat_test/fast
+
+#=============================================================================
+# Target rules for targets named convert_test
+
+# Build rule for target.
+convert_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 convert_test
+.PHONY : convert_test
+
+# fast build rule for target.
+convert_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/convert_test.dir/build.make _deps/highway-build/CMakeFiles/convert_test.dir/build
+.PHONY : convert_test/fast
+
+#=============================================================================
+# Target rules for targets named count_test
+
+# Build rule for target.
+count_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 count_test
+.PHONY : count_test
+
+# fast build rule for target.
+count_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/count_test.dir/build.make _deps/highway-build/CMakeFiles/count_test.dir/build
+.PHONY : count_test/fast
+
+#=============================================================================
+# Target rules for targets named crypto_test
+
+# Build rule for target.
+crypto_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 crypto_test
+.PHONY : crypto_test
+
+# fast build rule for target.
+crypto_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/crypto_test.dir/build.make _deps/highway-build/CMakeFiles/crypto_test.dir/build
+.PHONY : crypto_test/fast
+
+#=============================================================================
+# Target rules for targets named demote_test
+
+# Build rule for target.
+demote_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demote_test
+.PHONY : demote_test
+
+# fast build rule for target.
+demote_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/demote_test.dir/build.make _deps/highway-build/CMakeFiles/demote_test.dir/build
+.PHONY : demote_test/fast
+
+#=============================================================================
+# Target rules for targets named div_test
+
+# Build rule for target.
+div_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 div_test
+.PHONY : div_test
+
+# fast build rule for target.
+div_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/div_test.dir/build.make _deps/highway-build/CMakeFiles/div_test.dir/build
+.PHONY : div_test/fast
+
+#=============================================================================
+# Target rules for targets named dup128_vec_test
+
+# Build rule for target.
+dup128_vec_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dup128_vec_test
+.PHONY : dup128_vec_test
+
+# fast build rule for target.
+dup128_vec_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/dup128_vec_test.dir/build.make _deps/highway-build/CMakeFiles/dup128_vec_test.dir/build
+.PHONY : dup128_vec_test/fast
+
+#=============================================================================
+# Target rules for targets named expand_test
+
+# Build rule for target.
+expand_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 expand_test
+.PHONY : expand_test
+
+# fast build rule for target.
+expand_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/expand_test.dir/build.make _deps/highway-build/CMakeFiles/expand_test.dir/build
+.PHONY : expand_test/fast
+
+#=============================================================================
+# Target rules for targets named float_test
+
+# Build rule for target.
+float_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 float_test
+.PHONY : float_test
+
+# fast build rule for target.
+float_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/float_test.dir/build.make _deps/highway-build/CMakeFiles/float_test.dir/build
+.PHONY : float_test/fast
+
+#=============================================================================
+# Target rules for targets named fma_test
+
+# Build rule for target.
+fma_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fma_test
+.PHONY : fma_test
+
+# fast build rule for target.
+fma_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/fma_test.dir/build.make _deps/highway-build/CMakeFiles/fma_test.dir/build
+.PHONY : fma_test/fast
+
+#=============================================================================
+# Target rules for targets named foreach_vec_test
+
+# Build rule for target.
+foreach_vec_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 foreach_vec_test
+.PHONY : foreach_vec_test
+
+# fast build rule for target.
+foreach_vec_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/foreach_vec_test.dir/build.make _deps/highway-build/CMakeFiles/foreach_vec_test.dir/build
+.PHONY : foreach_vec_test/fast
+
+#=============================================================================
+# Target rules for targets named if_test
+
+# Build rule for target.
+if_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 if_test
+.PHONY : if_test
+
+# fast build rule for target.
+if_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/if_test.dir/build.make _deps/highway-build/CMakeFiles/if_test.dir/build
+.PHONY : if_test/fast
+
+#=============================================================================
+# Target rules for targets named in_range_float_to_int_conv_test
+
+# Build rule for target.
+in_range_float_to_int_conv_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 in_range_float_to_int_conv_test
+.PHONY : in_range_float_to_int_conv_test
+
+# fast build rule for target.
+in_range_float_to_int_conv_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/in_range_float_to_int_conv_test.dir/build.make _deps/highway-build/CMakeFiles/in_range_float_to_int_conv_test.dir/build
+.PHONY : in_range_float_to_int_conv_test/fast
+
+#=============================================================================
+# Target rules for targets named interleaved_test
+
+# Build rule for target.
+interleaved_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 interleaved_test
+.PHONY : interleaved_test
+
+# fast build rule for target.
+interleaved_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/interleaved_test.dir/build.make _deps/highway-build/CMakeFiles/interleaved_test.dir/build
+.PHONY : interleaved_test/fast
+
+#=============================================================================
+# Target rules for targets named logical_test
+
+# Build rule for target.
+logical_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logical_test
+.PHONY : logical_test
+
+# fast build rule for target.
+logical_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/logical_test.dir/build.make _deps/highway-build/CMakeFiles/logical_test.dir/build
+.PHONY : logical_test/fast
+
+#=============================================================================
+# Target rules for targets named mask_combine_test
+
+# Build rule for target.
+mask_combine_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mask_combine_test
+.PHONY : mask_combine_test
+
+# fast build rule for target.
+mask_combine_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/mask_combine_test.dir/build.make _deps/highway-build/CMakeFiles/mask_combine_test.dir/build
+.PHONY : mask_combine_test/fast
+
+#=============================================================================
+# Target rules for targets named mask_convert_test
+
+# Build rule for target.
+mask_convert_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mask_convert_test
+.PHONY : mask_convert_test
+
+# fast build rule for target.
+mask_convert_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/mask_convert_test.dir/build.make _deps/highway-build/CMakeFiles/mask_convert_test.dir/build
+.PHONY : mask_convert_test/fast
+
+#=============================================================================
+# Target rules for targets named mask_mem_test
+
+# Build rule for target.
+mask_mem_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mask_mem_test
+.PHONY : mask_mem_test
+
+# fast build rule for target.
+mask_mem_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/mask_mem_test.dir/build.make _deps/highway-build/CMakeFiles/mask_mem_test.dir/build
+.PHONY : mask_mem_test/fast
+
+#=============================================================================
+# Target rules for targets named mask_set_test
+
+# Build rule for target.
+mask_set_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mask_set_test
+.PHONY : mask_set_test
+
+# fast build rule for target.
+mask_set_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/mask_set_test.dir/build.make _deps/highway-build/CMakeFiles/mask_set_test.dir/build
+.PHONY : mask_set_test/fast
+
+#=============================================================================
+# Target rules for targets named mask_slide_test
+
+# Build rule for target.
+mask_slide_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mask_slide_test
+.PHONY : mask_slide_test
+
+# fast build rule for target.
+mask_slide_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/mask_slide_test.dir/build.make _deps/highway-build/CMakeFiles/mask_slide_test.dir/build
+.PHONY : mask_slide_test/fast
+
+#=============================================================================
+# Target rules for targets named mask_test
+
+# Build rule for target.
+mask_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mask_test
+.PHONY : mask_test
+
+# fast build rule for target.
+mask_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/mask_test.dir/build.make _deps/highway-build/CMakeFiles/mask_test.dir/build
+.PHONY : mask_test/fast
+
+#=============================================================================
+# Target rules for targets named masked_arithmetic_test
+
+# Build rule for target.
+masked_arithmetic_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 masked_arithmetic_test
+.PHONY : masked_arithmetic_test
+
+# fast build rule for target.
+masked_arithmetic_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/masked_arithmetic_test.dir/build.make _deps/highway-build/CMakeFiles/masked_arithmetic_test.dir/build
+.PHONY : masked_arithmetic_test/fast
+
+#=============================================================================
+# Target rules for targets named masked_minmax_test
+
+# Build rule for target.
+masked_minmax_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 masked_minmax_test
+.PHONY : masked_minmax_test
+
+# fast build rule for target.
+masked_minmax_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/masked_minmax_test.dir/build.make _deps/highway-build/CMakeFiles/masked_minmax_test.dir/build
+.PHONY : masked_minmax_test/fast
+
+#=============================================================================
+# Target rules for targets named memory_test
+
+# Build rule for target.
+memory_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory_test
+.PHONY : memory_test
+
+# fast build rule for target.
+memory_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/memory_test.dir/build.make _deps/highway-build/CMakeFiles/memory_test.dir/build
+.PHONY : memory_test/fast
+
+#=============================================================================
+# Target rules for targets named minmax_magnitude_test
+
+# Build rule for target.
+minmax_magnitude_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 minmax_magnitude_test
+.PHONY : minmax_magnitude_test
+
+# fast build rule for target.
+minmax_magnitude_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/minmax_magnitude_test.dir/build.make _deps/highway-build/CMakeFiles/minmax_magnitude_test.dir/build
+.PHONY : minmax_magnitude_test/fast
+
+#=============================================================================
+# Target rules for targets named minmax_number_test
+
+# Build rule for target.
+minmax_number_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 minmax_number_test
+.PHONY : minmax_number_test
+
+# fast build rule for target.
+minmax_number_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/minmax_number_test.dir/build.make _deps/highway-build/CMakeFiles/minmax_number_test.dir/build
+.PHONY : minmax_number_test/fast
+
+#=============================================================================
+# Target rules for targets named minmax_test
+
+# Build rule for target.
+minmax_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 minmax_test
+.PHONY : minmax_test
+
+# fast build rule for target.
+minmax_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/minmax_test.dir/build.make _deps/highway-build/CMakeFiles/minmax_test.dir/build
+.PHONY : minmax_test/fast
+
+#=============================================================================
+# Target rules for targets named minmax128_test
+
+# Build rule for target.
+minmax128_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 minmax128_test
+.PHONY : minmax128_test
+
+# fast build rule for target.
+minmax128_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/minmax128_test.dir/build.make _deps/highway-build/CMakeFiles/minmax128_test.dir/build
+.PHONY : minmax128_test/fast
+
+#=============================================================================
+# Target rules for targets named mul_by_pow2_test
+
+# Build rule for target.
+mul_by_pow2_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mul_by_pow2_test
+.PHONY : mul_by_pow2_test
+
+# fast build rule for target.
+mul_by_pow2_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/mul_by_pow2_test.dir/build.make _deps/highway-build/CMakeFiles/mul_by_pow2_test.dir/build
+.PHONY : mul_by_pow2_test/fast
+
+#=============================================================================
+# Target rules for targets named mul_pairwise_test
+
+# Build rule for target.
+mul_pairwise_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mul_pairwise_test
+.PHONY : mul_pairwise_test
+
+# fast build rule for target.
+mul_pairwise_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/mul_pairwise_test.dir/build.make _deps/highway-build/CMakeFiles/mul_pairwise_test.dir/build
+.PHONY : mul_pairwise_test/fast
+
+#=============================================================================
+# Target rules for targets named mul_test
+
+# Build rule for target.
+mul_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mul_test
+.PHONY : mul_test
+
+# fast build rule for target.
+mul_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/mul_test.dir/build.make _deps/highway-build/CMakeFiles/mul_test.dir/build
+.PHONY : mul_test/fast
+
+#=============================================================================
+# Target rules for targets named reduction_test
+
+# Build rule for target.
+reduction_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reduction_test
+.PHONY : reduction_test
+
+# fast build rule for target.
+reduction_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/reduction_test.dir/build.make _deps/highway-build/CMakeFiles/reduction_test.dir/build
+.PHONY : reduction_test/fast
+
+#=============================================================================
+# Target rules for targets named resize_test
+
+# Build rule for target.
+resize_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 resize_test
+.PHONY : resize_test
+
+# fast build rule for target.
+resize_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/resize_test.dir/build.make _deps/highway-build/CMakeFiles/resize_test.dir/build
+.PHONY : resize_test/fast
+
+#=============================================================================
+# Target rules for targets named reverse_test
+
+# Build rule for target.
+reverse_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reverse_test
+.PHONY : reverse_test
+
+# fast build rule for target.
+reverse_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/reverse_test.dir/build.make _deps/highway-build/CMakeFiles/reverse_test.dir/build
+.PHONY : reverse_test/fast
+
+#=============================================================================
+# Target rules for targets named rotate_test
+
+# Build rule for target.
+rotate_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rotate_test
+.PHONY : rotate_test
+
+# fast build rule for target.
+rotate_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/rotate_test.dir/build.make _deps/highway-build/CMakeFiles/rotate_test.dir/build
+.PHONY : rotate_test/fast
+
+#=============================================================================
+# Target rules for targets named saturated_test
+
+# Build rule for target.
+saturated_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 saturated_test
+.PHONY : saturated_test
+
+# fast build rule for target.
+saturated_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/saturated_test.dir/build.make _deps/highway-build/CMakeFiles/saturated_test.dir/build
+.PHONY : saturated_test/fast
+
+#=============================================================================
+# Target rules for targets named shift_test
+
+# Build rule for target.
+shift_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shift_test
+.PHONY : shift_test
+
+# fast build rule for target.
+shift_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/shift_test.dir/build.make _deps/highway-build/CMakeFiles/shift_test.dir/build
+.PHONY : shift_test/fast
+
+#=============================================================================
+# Target rules for targets named shuffle4_test
+
+# Build rule for target.
+shuffle4_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shuffle4_test
+.PHONY : shuffle4_test
+
+# fast build rule for target.
+shuffle4_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/shuffle4_test.dir/build.make _deps/highway-build/CMakeFiles/shuffle4_test.dir/build
+.PHONY : shuffle4_test/fast
+
+#=============================================================================
+# Target rules for targets named sign_test
+
+# Build rule for target.
+sign_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sign_test
+.PHONY : sign_test
+
+# fast build rule for target.
+sign_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/sign_test.dir/build.make _deps/highway-build/CMakeFiles/sign_test.dir/build
+.PHONY : sign_test/fast
+
+#=============================================================================
+# Target rules for targets named slide_up_down_test
+
+# Build rule for target.
+slide_up_down_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 slide_up_down_test
+.PHONY : slide_up_down_test
+
+# fast build rule for target.
+slide_up_down_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/slide_up_down_test.dir/build.make _deps/highway-build/CMakeFiles/slide_up_down_test.dir/build
+.PHONY : slide_up_down_test/fast
+
+#=============================================================================
+# Target rules for targets named sums_abs_diff_test
+
+# Build rule for target.
+sums_abs_diff_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sums_abs_diff_test
+.PHONY : sums_abs_diff_test
+
+# fast build rule for target.
+sums_abs_diff_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/sums_abs_diff_test.dir/build.make _deps/highway-build/CMakeFiles/sums_abs_diff_test.dir/build
+.PHONY : sums_abs_diff_test/fast
+
+#=============================================================================
+# Target rules for targets named swizzle_block_test
+
+# Build rule for target.
+swizzle_block_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 swizzle_block_test
+.PHONY : swizzle_block_test
+
+# fast build rule for target.
+swizzle_block_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/swizzle_block_test.dir/build.make _deps/highway-build/CMakeFiles/swizzle_block_test.dir/build
+.PHONY : swizzle_block_test/fast
+
+#=============================================================================
+# Target rules for targets named swizzle_test
+
+# Build rule for target.
+swizzle_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 swizzle_test
+.PHONY : swizzle_test
+
+# fast build rule for target.
+swizzle_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/swizzle_test.dir/build.make _deps/highway-build/CMakeFiles/swizzle_test.dir/build
+.PHONY : swizzle_test/fast
+
+#=============================================================================
+# Target rules for targets named table_test
+
+# Build rule for target.
+table_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 table_test
+.PHONY : table_test
+
+# fast build rule for target.
+table_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/table_test.dir/build.make _deps/highway-build/CMakeFiles/table_test.dir/build
+.PHONY : table_test/fast
+
+#=============================================================================
+# Target rules for targets named test_util_test
+
+# Build rule for target.
+test_util_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_util_test
+.PHONY : test_util_test
+
+# fast build rule for target.
+test_util_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/test_util_test.dir/build.make _deps/highway-build/CMakeFiles/test_util_test.dir/build
+.PHONY : test_util_test/fast
+
+#=============================================================================
+# Target rules for targets named truncate_test
+
+# Build rule for target.
+truncate_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 truncate_test
+.PHONY : truncate_test
+
+# fast build rule for target.
+truncate_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/truncate_test.dir/build.make _deps/highway-build/CMakeFiles/truncate_test.dir/build
+.PHONY : truncate_test/fast
+
+#=============================================================================
+# Target rules for targets named tuple_test
+
+# Build rule for target.
+tuple_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tuple_test
+.PHONY : tuple_test
+
+# fast build rule for target.
+tuple_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/tuple_test.dir/build.make _deps/highway-build/CMakeFiles/tuple_test.dir/build
+.PHONY : tuple_test/fast
+
+#=============================================================================
+# Target rules for targets named widen_mul_test
+
+# Build rule for target.
+widen_mul_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 widen_mul_test
+.PHONY : widen_mul_test
+
+# fast build rule for target.
+widen_mul_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/widen_mul_test.dir/build.make _deps/highway-build/CMakeFiles/widen_mul_test.dir/build
+.PHONY : widen_mul_test/fast
+
+#=============================================================================
+# Target rules for targets named auto_tune_test
+
+# Build rule for target.
+auto_tune_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 auto_tune_test
+.PHONY : auto_tune_test
+
+# fast build rule for target.
+auto_tune_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/auto_tune_test.dir/build.make _deps/highway-build/CMakeFiles/auto_tune_test.dir/build
+.PHONY : auto_tune_test/fast
+
+#=============================================================================
+# Target rules for targets named copy_test
+
+# Build rule for target.
+copy_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 copy_test
+.PHONY : copy_test
+
+# fast build rule for target.
+copy_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/copy_test.dir/build.make _deps/highway-build/CMakeFiles/copy_test.dir/build
+.PHONY : copy_test/fast
+
+#=============================================================================
+# Target rules for targets named find_test
+
+# Build rule for target.
+find_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 find_test
+.PHONY : find_test
+
+# fast build rule for target.
+find_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/find_test.dir/build.make _deps/highway-build/CMakeFiles/find_test.dir/build
+.PHONY : find_test/fast
+
+#=============================================================================
+# Target rules for targets named transform_test
+
+# Build rule for target.
+transform_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 transform_test
+.PHONY : transform_test
+
+# fast build rule for target.
+transform_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/transform_test.dir/build.make _deps/highway-build/CMakeFiles/transform_test.dir/build
+.PHONY : transform_test/fast
+
+#=============================================================================
+# Target rules for targets named bit_pack_test
+
+# Build rule for target.
+bit_pack_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bit_pack_test
+.PHONY : bit_pack_test
+
+# fast build rule for target.
+bit_pack_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/bit_pack_test.dir/build.make _deps/highway-build/CMakeFiles/bit_pack_test.dir/build
+.PHONY : bit_pack_test/fast
+
+#=============================================================================
+# Target rules for targets named dot_test
+
+# Build rule for target.
+dot_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dot_test
+.PHONY : dot_test
+
+# fast build rule for target.
+dot_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/dot_test.dir/build.make _deps/highway-build/CMakeFiles/dot_test.dir/build
+.PHONY : dot_test/fast
+
+#=============================================================================
+# Target rules for targets named matvec_test
+
+# Build rule for target.
+matvec_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 matvec_test
+.PHONY : matvec_test
+
+# fast build rule for target.
+matvec_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/matvec_test.dir/build.make _deps/highway-build/CMakeFiles/matvec_test.dir/build
+.PHONY : matvec_test/fast
+
+#=============================================================================
+# Target rules for targets named image_test
+
+# Build rule for target.
+image_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 image_test
+.PHONY : image_test
+
+# fast build rule for target.
+image_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/image_test.dir/build.make _deps/highway-build/CMakeFiles/image_test.dir/build
+.PHONY : image_test/fast
+
+#=============================================================================
+# Target rules for targets named math_test
+
+# Build rule for target.
+math_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 math_test
+.PHONY : math_test
+
+# fast build rule for target.
+math_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/math_test.dir/build.make _deps/highway-build/CMakeFiles/math_test.dir/build
+.PHONY : math_test/fast
+
+#=============================================================================
+# Target rules for targets named random_test
+
+# Build rule for target.
+random_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 random_test
+.PHONY : random_test
+
+# fast build rule for target.
+random_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/random_test.dir/build.make _deps/highway-build/CMakeFiles/random_test.dir/build
+.PHONY : random_test/fast
+
+#=============================================================================
+# Target rules for targets named bench_sort
+
+# Build rule for target.
+bench_sort: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bench_sort
+.PHONY : bench_sort
+
+# fast build rule for target.
+bench_sort/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/bench_sort.dir/build.make _deps/highway-build/CMakeFiles/bench_sort.dir/build
+.PHONY : bench_sort/fast
+
+#=============================================================================
+# Target rules for targets named sort_test
+
+# Build rule for target.
+sort_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sort_test
+.PHONY : sort_test
+
+# fast build rule for target.
+sort_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/sort_test.dir/build.make _deps/highway-build/CMakeFiles/sort_test.dir/build
+.PHONY : sort_test/fast
+
+#=============================================================================
+# Target rules for targets named sort_unit_test
+
+# Build rule for target.
+sort_unit_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sort_unit_test
+.PHONY : sort_unit_test
+
+# fast build rule for target.
+sort_unit_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/sort_unit_test.dir/build.make _deps/highway-build/CMakeFiles/sort_unit_test.dir/build
+.PHONY : sort_unit_test/fast
+
+#=============================================================================
+# Target rules for targets named spin_test
+
+# Build rule for target.
+spin_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spin_test
+.PHONY : spin_test
+
+# fast build rule for target.
+spin_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/spin_test.dir/build.make _deps/highway-build/CMakeFiles/spin_test.dir/build
+.PHONY : spin_test/fast
+
+#=============================================================================
+# Target rules for targets named thread_pool_test
+
+# Build rule for target.
+thread_pool_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_pool_test
+.PHONY : thread_pool_test
+
+# fast build rule for target.
+thread_pool_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/thread_pool_test.dir/build.make _deps/highway-build/CMakeFiles/thread_pool_test.dir/build
+.PHONY : thread_pool_test/fast
+
+#=============================================================================
+# Target rules for targets named topology_test
+
+# Build rule for target.
+topology_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 topology_test
+.PHONY : topology_test
+
+# fast build rule for target.
+topology_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/topology_test.dir/build.make _deps/highway-build/CMakeFiles/topology_test.dir/build
+.PHONY : topology_test/fast
+
+#=============================================================================
+# Target rules for targets named unroller_test
+
+# Build rule for target.
+unroller_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unroller_test
+.PHONY : unroller_test
+
+# fast build rule for target.
+unroller_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/CMakeFiles/unroller_test.dir/build.make _deps/highway-build/CMakeFiles/unroller_test.dir/build
+.PHONY : unroller_test/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/highway-build/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/highway-build/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/highway-build/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/highway-build/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/highway-build/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
 src/benchmark.o: src/benchmark.cpp.o
 .PHONY : src/benchmark.o
 
@@ -173,9 +1804,135 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... Continuous"
+	@echo "... ContinuousBuild"
+	@echo "... ContinuousConfigure"
+	@echo "... ContinuousCoverage"
+	@echo "... ContinuousMemCheck"
+	@echo "... ContinuousStart"
+	@echo "... ContinuousSubmit"
+	@echo "... ContinuousTest"
+	@echo "... ContinuousUpdate"
+	@echo "... Experimental"
+	@echo "... ExperimentalBuild"
+	@echo "... ExperimentalConfigure"
+	@echo "... ExperimentalCoverage"
+	@echo "... ExperimentalMemCheck"
+	@echo "... ExperimentalStart"
+	@echo "... ExperimentalSubmit"
+	@echo "... ExperimentalTest"
+	@echo "... ExperimentalUpdate"
+	@echo "... Nightly"
+	@echo "... NightlyBuild"
+	@echo "... NightlyConfigure"
+	@echo "... NightlyCoverage"
+	@echo "... NightlyMemCheck"
+	@echo "... NightlyMemoryCheck"
+	@echo "... NightlyStart"
+	@echo "... NightlySubmit"
+	@echo "... NightlyTest"
+	@echo "... NightlyUpdate"
+	@echo "... abort_test"
+	@echo "... aligned_allocator_test"
+	@echo "... arithmetic_test"
+	@echo "... auto_tune_test"
+	@echo "... base_test"
+	@echo "... bench_sort"
 	@echo "... benchmark"
+	@echo "... bit_pack_test"
+	@echo "... bit_permute_test"
+	@echo "... bit_set_test"
+	@echo "... blockwise_combine_test"
+	@echo "... blockwise_shift_test"
+	@echo "... blockwise_test"
+	@echo "... cast_test"
+	@echo "... combine_test"
+	@echo "... compare_test"
+	@echo "... complex_arithmetic_test"
+	@echo "... compress_test"
+	@echo "... concat_test"
+	@echo "... convert_test"
+	@echo "... copy_test"
+	@echo "... count_test"
+	@echo "... crypto_test"
+	@echo "... demote_test"
+	@echo "... div_test"
+	@echo "... dot_test"
+	@echo "... dup128_vec_test"
+	@echo "... expand_test"
+	@echo "... find_test"
+	@echo "... float_test"
+	@echo "... fma_test"
+	@echo "... foreach_vec_test"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
+	@echo "... highway_test"
+	@echo "... hwy"
+	@echo "... hwy_benchmark"
+	@echo "... hwy_contrib"
+	@echo "... hwy_list_targets"
+	@echo "... hwy_profiler_example"
+	@echo "... hwy_test"
+	@echo "... if_test"
+	@echo "... image_test"
+	@echo "... in_range_float_to_int_conv_test"
+	@echo "... interleaved_test"
 	@echo "... ips4o_example"
+	@echo "... logical_test"
+	@echo "... mask_combine_test"
+	@echo "... mask_convert_test"
+	@echo "... mask_mem_test"
+	@echo "... mask_set_test"
+	@echo "... mask_slide_test"
+	@echo "... mask_test"
+	@echo "... masked_arithmetic_test"
+	@echo "... masked_minmax_test"
+	@echo "... math_test"
+	@echo "... matvec_test"
+	@echo "... memory_test"
+	@echo "... minmax128_test"
+	@echo "... minmax_magnitude_test"
+	@echo "... minmax_number_test"
+	@echo "... minmax_test"
+	@echo "... mul_by_pow2_test"
+	@echo "... mul_pairwise_test"
+	@echo "... mul_test"
+	@echo "... nanobenchmark_test"
+	@echo "... perf_counters_test"
+	@echo "... random_test"
+	@echo "... reduction_test"
+	@echo "... resize_test"
+	@echo "... reverse_test"
+	@echo "... rotate_test"
+	@echo "... saturated_test"
+	@echo "... shift_test"
+	@echo "... shuffle4_test"
+	@echo "... sign_test"
+	@echo "... skeleton_test"
+	@echo "... slide_up_down_test"
+	@echo "... sort_test"
+	@echo "... sort_unit_test"
+	@echo "... spin_test"
+	@echo "... sums_abs_diff_test"
+	@echo "... swizzle_block_test"
+	@echo "... swizzle_test"
+	@echo "... table_test"
+	@echo "... targets_test"
+	@echo "... test_util_test"
+	@echo "... thread_pool_test"
+	@echo "... topology_test"
+	@echo "... transform_test"
+	@echo "... truncate_test"
+	@echo "... tuple_test"
+	@echo "... unroller_test"
+	@echo "... widen_mul_test"
 	@echo "... src/benchmark.o"
 	@echo "... src/benchmark.i"
 	@echo "... src/benchmark.s"

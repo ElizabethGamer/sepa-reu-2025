@@ -1,0 +1,130 @@
+Performing C++ SOURCE FILE Test HWY_EMSCRIPTEN failed with the following output:
+Change Dir: /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-iaga9K
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0d993/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0d993.dir/build.make CMakeFiles/cmTC_0d993.dir/build
+gmake[1]: Entering directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-iaga9K'
+Building CXX object CMakeFiles/cmTC_0d993.dir/src.cxx.o
+/usr/bin/c++ -DHWY_EMSCRIPTEN  -fPIE -o CMakeFiles/cmTC_0d993.dir/src.cxx.o -c /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-iaga9K/src.cxx
+/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-iaga9K/src.cxx: In function ‘int main()’:
+/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-iaga9K/src.cxx:3:21: error: static assertion failed: __EMSCRIPTEN__ is not defined
+    3 |       static_assert(false, "__EMSCRIPTEN__ is not defined");
+      |                     ^~~~~
+gmake[1]: *** [CMakeFiles/cmTC_0d993.dir/build.make:78: CMakeFiles/cmTC_0d993.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-iaga9K'
+gmake: *** [Makefile:127: cmTC_0d993/fast] Error 2
+
+
+Source file was:
+int main() {
+      #if !defined(__EMSCRIPTEN__)
+      static_assert(false, "__EMSCRIPTEN__ is not defined");
+      #endif
+      return 0;
+    }
+
+Performing C++ SOURCE FILE Test HWY_RISCV failed with the following output:
+Change Dir: /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-JFckGc
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6d798/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6d798.dir/build.make CMakeFiles/cmTC_6d798.dir/build
+gmake[1]: Entering directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-JFckGc'
+Building CXX object CMakeFiles/cmTC_6d798.dir/src.cxx.o
+/usr/bin/c++ -DHWY_RISCV  -fPIE -o CMakeFiles/cmTC_6d798.dir/src.cxx.o -c /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-JFckGc/src.cxx
+/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-JFckGc/src.cxx: In function ‘int main()’:
+/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-JFckGc/src.cxx:3:21: error: static assertion failed: __riscv is not defined
+    3 |       static_assert(false, "__riscv is not defined");
+      |                     ^~~~~
+gmake[1]: *** [CMakeFiles/cmTC_6d798.dir/build.make:78: CMakeFiles/cmTC_6d798.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-JFckGc'
+gmake: *** [Makefile:127: cmTC_6d798/fast] Error 2
+
+
+Source file was:
+int main() {
+      #if !defined(__riscv)
+      static_assert(false, "__riscv is not defined");
+      #endif
+      return 0;
+    }
+
+Determining if the include file asm/hwcap.h exists failed with the following output:
+Change Dir: /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-rxZHSX
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a84dc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a84dc.dir/build.make CMakeFiles/cmTC_a84dc.dir/build
+gmake[1]: Entering directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-rxZHSX'
+Building C object CMakeFiles/cmTC_a84dc.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_a84dc.dir/CheckIncludeFile.c.o -c /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-rxZHSX/CheckIncludeFile.c
+/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-rxZHSX/CheckIncludeFile.c:1:10: fatal error: asm/hwcap.h: No such file or directory
+    1 | #include <asm/hwcap.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_a84dc.dir/build.make:78: CMakeFiles/cmTC_a84dc.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-rxZHSX'
+gmake: *** [Makefile:127: cmTC_a84dc/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test HWY_EMSCRIPTEN failed with the following output:
+Change Dir: /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-LjLutW
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_91f18/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_91f18.dir/build.make CMakeFiles/cmTC_91f18.dir/build
+gmake[1]: Entering directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-LjLutW'
+Building CXX object CMakeFiles/cmTC_91f18.dir/src.cxx.o
+/usr/bin/c++ -DHWY_EMSCRIPTEN  -fPIE -o CMakeFiles/cmTC_91f18.dir/src.cxx.o -c /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-LjLutW/src.cxx
+/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-LjLutW/src.cxx: In function ‘int main()’:
+/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-LjLutW/src.cxx:3:21: error: static assertion failed: __EMSCRIPTEN__ is not defined
+    3 |       static_assert(false, "__EMSCRIPTEN__ is not defined");
+      |                     ^~~~~
+gmake[1]: *** [CMakeFiles/cmTC_91f18.dir/build.make:78: CMakeFiles/cmTC_91f18.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-LjLutW'
+gmake: *** [Makefile:127: cmTC_91f18/fast] Error 2
+
+
+Source file was:
+int main() {
+      #if !defined(__EMSCRIPTEN__)
+      static_assert(false, "__EMSCRIPTEN__ is not defined");
+      #endif
+      return 0;
+    }
+
+Performing C++ SOURCE FILE Test HWY_RISCV failed with the following output:
+Change Dir: /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-5uQ08c
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_29b1d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_29b1d.dir/build.make CMakeFiles/cmTC_29b1d.dir/build
+gmake[1]: Entering directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-5uQ08c'
+Building CXX object CMakeFiles/cmTC_29b1d.dir/src.cxx.o
+/usr/bin/c++ -DHWY_RISCV  -fPIE -o CMakeFiles/cmTC_29b1d.dir/src.cxx.o -c /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-5uQ08c/src.cxx
+/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-5uQ08c/src.cxx: In function ‘int main()’:
+/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-5uQ08c/src.cxx:3:21: error: static assertion failed: __riscv is not defined
+    3 |       static_assert(false, "__riscv is not defined");
+      |                     ^~~~~
+gmake[1]: *** [CMakeFiles/cmTC_29b1d.dir/build.make:78: CMakeFiles/cmTC_29b1d.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-5uQ08c'
+gmake: *** [Makefile:127: cmTC_29b1d/fast] Error 2
+
+
+Source file was:
+int main() {
+      #if !defined(__riscv)
+      static_assert(false, "__riscv is not defined");
+      #endif
+      return 0;
+    }
+
+Determining if the include file asm/hwcap.h exists failed with the following output:
+Change Dir: /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-p7M4qV
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_98df9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_98df9.dir/build.make CMakeFiles/cmTC_98df9.dir/build
+gmake[1]: Entering directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-p7M4qV'
+Building C object CMakeFiles/cmTC_98df9.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_98df9.dir/CheckIncludeFile.c.o -c /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-p7M4qV/CheckIncludeFile.c
+/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-p7M4qV/CheckIncludeFile.c:1:10: fatal error: asm/hwcap.h: No such file or directory
+    1 | #include <asm/hwcap.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_98df9.dir/build.make:78: CMakeFiles/cmTC_98df9.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-p7M4qV'
+gmake: *** [Makefile:127: cmTC_98df9/fast] Error 2
+
+
+

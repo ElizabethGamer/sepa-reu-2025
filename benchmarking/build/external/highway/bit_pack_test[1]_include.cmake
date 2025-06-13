@@ -1,0 +1,5 @@
+if(EXISTS "/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/bit_pack_test[1]_tests.cmake")
+  include("/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/bit_pack_test[1]_tests.cmake")
+else()
+  add_test(bit_pack_test_NOT_BUILT bit_pack_test_NOT_BUILT)
+endif()

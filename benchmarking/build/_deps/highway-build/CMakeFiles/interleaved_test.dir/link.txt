@@ -1,0 +1,1 @@
+/usr/bin/c++ -O2 -g -DNDEBUG -fPIE -pie CMakeFiles/interleaved_test.dir/hwy/tests/interleaved_test.cc.o -o tests/interleaved_test  libhwy.a libhwy_test.a libhwy_contrib.a ../../lib/libgtest.a ../../lib/libgtest_main.a libhwy.a ../../lib/libgtest.a 

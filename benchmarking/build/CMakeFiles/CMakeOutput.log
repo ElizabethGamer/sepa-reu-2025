@@ -498,3 +498,74 @@ gmake[1]: Leaving directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CM
 Source file was:
 int main() { return 0; }
 
+Performing C++ SOURCE FILE Test ATOMICS_LOCK_FREE_INSTRUCTIONS succeeded with the following output:
+Change Dir: /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-6AWcQZ
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7d62f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7d62f.dir/build.make CMakeFiles/cmTC_7d62f.dir/build
+gmake[1]: Entering directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-6AWcQZ'
+Building CXX object CMakeFiles/cmTC_7d62f.dir/src.cxx.o
+/usr/bin/c++ -DATOMICS_LOCK_FREE_INSTRUCTIONS  -std=c++11 -o CMakeFiles/cmTC_7d62f.dir/src.cxx.o -c /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-6AWcQZ/src.cxx
+Linking CXX executable cmTC_7d62f
+/opt/cmake-3.25.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d62f.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_7d62f.dir/src.cxx.o -o cmTC_7d62f 
+gmake[1]: Leaving directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-6AWcQZ'
+
+
+Source file was:
+
+     #include <atomic>
+     #include <cstdint>
+     std::atomic<uint8_t> n8 (0); // riscv64
+     std::atomic<uint64_t> n64 (0); // armel, mipsel, powerpc
+     int main() {
+       ++n8;
+       ++n64;
+       return 0;
+     }
+
+Performing C++ SOURCE FILE Test CMAKE_CXX_LINK_PIE_SUPPORTED succeeded with the following output:
+Change Dir: /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-63vLfD
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b2b4c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b2b4c.dir/build.make CMakeFiles/cmTC_b2b4c.dir/build
+gmake[1]: Entering directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-63vLfD'
+Building CXX object CMakeFiles/cmTC_b2b4c.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_CXX_LINK_PIE_SUPPORTED   -o CMakeFiles/cmTC_b2b4c.dir/src.cxx.o -c /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-63vLfD/src.cxx
+Linking CXX executable cmTC_b2b4c
+/opt/cmake-3.25.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2b4c.dir/link.txt --verbose=1
+/usr/bin/c++ -fPIE -pie CMakeFiles/cmTC_b2b4c.dir/src.cxx.o -o cmTC_b2b4c 
+gmake[1]: Leaving directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-63vLfD'
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test CMAKE_CXX_LINK_NO_PIE_SUPPORTED succeeded with the following output:
+Change Dir: /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-BP3S4k
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_25247/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_25247.dir/build.make CMakeFiles/cmTC_25247.dir/build
+gmake[1]: Entering directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-BP3S4k'
+Building CXX object CMakeFiles/cmTC_25247.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_CXX_LINK_NO_PIE_SUPPORTED   -o CMakeFiles/cmTC_25247.dir/src.cxx.o -c /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-BP3S4k/src.cxx
+Linking CXX executable cmTC_25247
+/opt/cmake-3.25.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25247.dir/link.txt --verbose=1
+/usr/bin/c++ -no-pie CMakeFiles/cmTC_25247.dir/src.cxx.o -o cmTC_25247 
+gmake[1]: Leaving directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-BP3S4k'
+
+
+Source file was:
+int main() { return 0; }
+
+Determining if the include file sys/auxv.h exists passed with the following output:
+Change Dir: /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-b7Jrc4
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1c1df/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1c1df.dir/build.make CMakeFiles/cmTC_1c1df.dir/build
+gmake[1]: Entering directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-b7Jrc4'
+Building C object CMakeFiles/cmTC_1c1df.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_1c1df.dir/CheckIncludeFile.c.o -c /home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-b7Jrc4/CheckIncludeFile.c
+Linking C executable cmTC_1c1df
+/opt/cmake-3.25.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c1df.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_1c1df.dir/CheckIncludeFile.c.o -o cmTC_1c1df 
+gmake[1]: Leaving directory '/home/elizabeth/sepa-reu-2025/benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-b7Jrc4'
+
+
+

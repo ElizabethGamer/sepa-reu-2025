@@ -1,0 +1,5 @@
+if(EXISTS "/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/truncate_test[1]_tests.cmake")
+  include("/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/truncate_test[1]_tests.cmake")
+else()
+  add_test(truncate_test_NOT_BUILT truncate_test_NOT_BUILT)
+endif()

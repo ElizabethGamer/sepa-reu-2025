@@ -1,0 +1,5 @@
+if(EXISTS "/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/perf_counters_test[1]_tests.cmake")
+  include("/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/perf_counters_test[1]_tests.cmake")
+else()
+  add_test(perf_counters_test_NOT_BUILT perf_counters_test_NOT_BUILT)
+endif()

@@ -1,0 +1,5 @@
+if(EXISTS "/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/aligned_allocator_test[1]_tests.cmake")
+  include("/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/aligned_allocator_test[1]_tests.cmake")
+else()
+  add_test(aligned_allocator_test_NOT_BUILT aligned_allocator_test_NOT_BUILT)
+endif()

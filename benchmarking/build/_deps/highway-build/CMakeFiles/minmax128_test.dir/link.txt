@@ -1,0 +1,1 @@
+/usr/bin/c++ -O2 -g -DNDEBUG -fPIE -pie CMakeFiles/minmax128_test.dir/hwy/tests/minmax128_test.cc.o -o tests/minmax128_test  libhwy.a libhwy_test.a libhwy_contrib.a ../../lib/libgtest.a ../../lib/libgtest_main.a libhwy.a ../../lib/libgtest.a 

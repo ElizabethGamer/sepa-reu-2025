@@ -1,0 +1,5 @@
+if(EXISTS "/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/test_util_test[1]_tests.cmake")
+  include("/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/test_util_test[1]_tests.cmake")
+else()
+  add_test(test_util_test_NOT_BUILT test_util_test_NOT_BUILT)
+endif()
