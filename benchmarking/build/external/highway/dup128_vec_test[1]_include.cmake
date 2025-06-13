@@ -1,0 +1,5 @@
+if(EXISTS "/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/dup128_vec_test[1]_tests.cmake")
+  include("/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/dup128_vec_test[1]_tests.cmake")
+else()
+  add_test(dup128_vec_test_NOT_BUILT dup128_vec_test_NOT_BUILT)
+endif()

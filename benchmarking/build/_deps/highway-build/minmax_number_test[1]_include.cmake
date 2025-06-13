@@ -1,0 +1,5 @@
+if(EXISTS "/home/elizabeth/sepa-reu-2025/benchmarking/build/_deps/highway-build/minmax_number_test[1]_tests.cmake")
+  include("/home/elizabeth/sepa-reu-2025/benchmarking/build/_deps/highway-build/minmax_number_test[1]_tests.cmake")
+else()
+  add_test(minmax_number_test_NOT_BUILT minmax_number_test_NOT_BUILT)
+endif()

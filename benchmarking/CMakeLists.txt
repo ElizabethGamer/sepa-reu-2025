@@ -22,3 +22,13 @@ target_link_libraries(benchmark PRIVATE ips4o)
 
 # CPP11
 target_include_directories(benchmark PRIVATE "external/cpp11sort/include")
+
+# VQSort
+ include(FetchContent)
+ FetchContent_Declare(highway
+   GIT_REPOSITORY  https://github.com/google/highway/
+   GIT_TAG         master
+ )
+ FetchContent_MakeAvailable(highway)
+
+ target_link_libraries(benchmark PRIVATE parlay hwy hwy_contrib)

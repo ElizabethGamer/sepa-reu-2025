@@ -1,0 +1,5 @@
+if(EXISTS "/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/minmax_magnitude_test[1]_tests.cmake")
+  include("/home/elizabeth/sepa-reu-2025/benchmarking/build/external/highway/minmax_magnitude_test[1]_tests.cmake")
+else()
+  add_test(minmax_magnitude_test_NOT_BUILT minmax_magnitude_test_NOT_BUILT)
+endif()

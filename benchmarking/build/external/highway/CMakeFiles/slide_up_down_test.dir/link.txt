@@ -1,0 +1,1 @@
+/usr/bin/c++ -O2 -g -DNDEBUG -fPIE -pie CMakeFiles/slide_up_down_test.dir/hwy/tests/slide_up_down_test.cc.o -o tests/slide_up_down_test  libhwy.a libhwy_test.a libhwy_contrib.a ../../lib/libgtest.a ../../lib/libgtest_main.a libhwy.a ../../lib/libgtest.a 

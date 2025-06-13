@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/benchmark.dir/src/benchmark.cpp.o -o benchmark  /usr/lib/x86_64-linux-gnu/libtbb.so.12.5 -latomic 
+/usr/bin/c++ CMakeFiles/benchmark.dir/src/benchmark.cpp.o -o benchmark  -lparlay _deps/highway-build/libhwy.a _deps/highway-build/libhwy_contrib.a /usr/lib/x86_64-linux-gnu/libtbb.so.12.5 -latomic _deps/highway-build/libhwy.a 
