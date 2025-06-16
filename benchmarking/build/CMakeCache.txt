@@ -205,7 +205,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=beginnerparlay
+CMAKE_PROJECT_NAME:STATIC=benchmarking
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.2.0
@@ -414,6 +414,15 @@ beginnerparlay_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 beginnerparlay_SOURCE_DIR:STATIC=/home/elizabeth/sepa-reu-2025/benchmarking
+
+//Value Computed by CMake
+benchmarking_BINARY_DIR:STATIC=/home/elizabeth/sepa-reu-2025/benchmarking/build
+
+//Value Computed by CMake
+benchmarking_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+benchmarking_SOURCE_DIR:STATIC=/home/elizabeth/sepa-reu-2025/benchmarking
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/elizabeth/sepa-reu-2025/benchmarking/build/_deps/highway-build/googletest-build/googlemock

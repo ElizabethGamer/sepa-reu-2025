@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(beginnerparlay)
+project(benchmarking)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
@@ -31,4 +31,4 @@ target_include_directories(benchmark PRIVATE "external/cpp11sort/include")
  )
  FetchContent_MakeAvailable(highway)
 
- target_link_libraries(benchmark PRIVATE parlay hwy hwy_contrib)
+ target_link_libraries(benchmark PRIVATE hwy hwy_contrib)

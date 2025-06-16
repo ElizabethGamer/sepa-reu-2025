@@ -10,8 +10,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.25.1/CMakeSystem.cmake"
   "CMakeLists.txt"
   "highway-populate-prefix/tmp/highway-populate-mkdirs.cmake"
+  "/opt/cmake-3.25.1/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake"
   "/opt/cmake-3.25.1/share/cmake-3.25/Modules/CMakeGenericSystem.cmake"
   "/opt/cmake-3.25.1/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake"
+  "/opt/cmake-3.25.1/share/cmake-3.25/Modules/CMakeSystem.cmake.in"
   "/opt/cmake-3.25.1/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake"
   "/opt/cmake-3.25.1/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake"
   "/opt/cmake-3.25.1/share/cmake-3.25/Modules/ExternalProject.cmake"
@@ -32,6 +34,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/3.25.1/CMakeSystem.cmake"
   "highway-populate-prefix/tmp/highway-populate-mkdirs.cmake"
   "highway-populate-prefix/tmp/highway-populate-gitclone.cmake"
   "highway-populate-prefix/src/highway-populate-stamp/highway-populate-gitinfo.txt"
