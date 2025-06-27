@@ -14,6 +14,8 @@
 #include "hwy/contrib/sort/vqsort.h"
 #include "hwy/highway.h"
 
+#include "pdqsort.h"
+
 namespace hn = hwy::HWY_NAMESPACE;
 
 using namespace std;
@@ -67,7 +69,7 @@ void sample_sort_(Range in, Range out, Less less, int level=1) {
   long cutoff = 256;
   if (n <= cutoff || level > 2) {
     parlay::copy(in, out);
-    hwy::VQSort((long*)(out.begin()), n, hwy::SortAscending());
+    pdqsort(out.begin(), out.end());
     return;
   }
 
